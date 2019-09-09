@@ -5,7 +5,11 @@
 
 /*** LOGIN ********************************************************************/
 
-.accordion button
+.loginRegisterContainer{
+    margin-top: 150px;
+}
+
+.accordion-title
 {
     color: black;
     text-emphasis: none;
@@ -13,6 +17,16 @@
 
 
 
+
+
+
+
+/*** FOOTER ********************************************************************/
+
+footer{
+    position: absolute;
+    bottom: 5px;
+}
 
 
 
