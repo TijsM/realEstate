@@ -39,7 +39,6 @@ require_once(__DIR__ . '/components/top.php');
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
-
                 <div class="accordion" id="accordionExample">
                     <div class="card">
                         <div class="row">
@@ -47,7 +46,6 @@ require_once(__DIR__ . '/components/top.php');
                                 <div class="list-group " id="list-tab" role="tablist">
                                     <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">register as a user</a>
                                     <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">register as an agent</a>
-
                                 </div>
                             </div>
                             <div class="col-8">

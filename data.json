@@ -6,6 +6,13 @@
             "lastName": "Martens",
             "email": "tijs.martens@gmail.com",
             "password": "password"
+        },
+        "5d7695941af22": {
+            "id": "5d7695941af22",
+            "name": "dsfsqd",
+            "lastName": "testfamname",
+            "email": "test@gmail.om",
+            "password": "password"
         }
     },
     "agents": {
