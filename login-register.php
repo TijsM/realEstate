@@ -15,16 +15,16 @@ require_once(__DIR__ . '/components/top.php');
 
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-                <form method="POST">
+                <form method="POST" id="loginForm">
                     <div class="form-group">
                         <label for="txtEmail">Email address</label>
-                        <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Enter email">
+                        <input type="text" class="form-control" id="txtLoginEmail" name="email" placeholder="Enter email">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" name='txtPassword' placeholder="Password">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="txtLoginPassword" name='password' placeholder="Password">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-primary" id="loginSubmit">Submit</button>
                 </form>
             </div>
         </div>

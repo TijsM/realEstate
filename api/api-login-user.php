@@ -1,15 +1,15 @@
 <?php
 
 session_start();
-//check if user is already logged in
 
+//check if user is already logged in
 // if ($_SESSION['sUserId'] ){
 //     echo '{
 //         "status": 1,
-//         "message": "logged in "
+//         "message": "user was already logged in"
 //     }';
+//     exit;
 // }
-
 //check if mail is filled in
 if (empty($_POST['email'])){
     sendErrorMessage('email address missing', __LINE__);
@@ -43,7 +43,7 @@ foreach($jData->users as $sKey => $jProp){
 
         if($jProp->password == $_POST['password']){
           
-            $_SESSION['sUserId'] = $sKey;
+            $_SESSION['jUser'] = $jProp;
         
             echo '{
                 "status": 1,

@@ -1,6 +1,7 @@
 {
     "users": {
         "sdlkfjdslnmsdf": {
+            "id": "sdlkfjdslnmsdf",
             "name": "Tijs",
             "password": "password",
             "lastName": "Martens",
@@ -9,6 +10,7 @@
     },
     "agents": {
         "mlksdjmlksqdjf": {
+            "id": "mlksdjmlksqdjf",
             "name": "agent",
             "passowrd": "password",
             "lastName": "agent",
