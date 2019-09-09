@@ -15,14 +15,14 @@ require_once(__DIR__ . '/components/top.php');
 
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-                <form>
+                <form method="POST">
                     <div class="form-group">
                         <label for="txtEmail">Email address</label>
                         <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Enter email">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="password" class="form-control" id="exampleInputPassword1" name='txtPassword' placeholder="Password">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -44,6 +44,8 @@ require_once(__DIR__ . '/components/top.php');
         </div>
     </div>
 </div>
+
+
 
 
 

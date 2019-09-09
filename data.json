@@ -1,0 +1,31 @@
+{
+    "users": {
+        "sdlkfjdslnmsdf": {
+            "name": "Tijs",
+            "password": "password",
+            "lastName": "Martens",
+            "email": "tijs.martens@gmail.com"
+        }
+    },
+    "agents": {
+        "mlksdjmlksqdjf": {
+            "name": "agent",
+            "passowrd": "password",
+            "lastName": "agent",
+            "email": "agent@agent.com",
+            "phone": "+32499821224",
+            "properties": {
+                "name": "casa vila",
+                "price": 1000000,
+                "location": {
+                    "longtitude": 55.699409,
+                    "latitude": 12.554183,
+                    "streetName": "bekken",
+                    "houseNumber": 8,
+                    "city": "Ghent",
+                    "zipCode": "9000"
+                }
+            }
+        }
+    }
+}
