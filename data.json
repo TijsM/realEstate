@@ -3,9 +3,9 @@
         "sdlkfjdslnmsdf": {
             "id": "sdlkfjdslnmsdf",
             "name": "Tijs",
-            "password": "password",
             "lastName": "Martens",
-            "email": "tijs.martens@gmail.com"
+            "email": "tijs.martens@gmail.com",
+            "password": "password"
         }
     },
     "agents": {
