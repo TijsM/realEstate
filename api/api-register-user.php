@@ -47,6 +47,7 @@ $jUsers = json_decode($sUsers);
 
 $sUniqueId = uniqid();
 $jUsers->users->$sUniqueId = new stdClass();
+$jUsers->users->$sUniqueId->isAgent = 'false';
 $jUsers->users->$sUniqueId->id = $sUniqueId;
 $jUsers->users->$sUniqueId->name = $sUserName;
 $jUsers->users->$sUniqueId->lastName = $sFamilyName;

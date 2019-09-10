@@ -53,25 +53,27 @@ $sUsers = file_get_contents('../data.json');
 $jUsers = json_decode($sUsers);
 
 $sUniqueId = uniqid();
-$jUsers->agents->$sUniqueId = new stdClass();
-$jUsers->agents->$sUniqueId->id = $sUniqueId;
-$jUsers->agents->$sUniqueId->name = $sUserName;
-$jUsers->agents->$sUniqueId->lastName = $sFamilyName;
-$jUsers->agents->$sUniqueId->email = $sEmail;
-$jUsers->agents->$sUniqueId->password = $sPassword;
-$jUsers->agents->$sUniqueId->phone = $sPhone;
-$jUsers->agents->$sUniqueId->properties = new stdClass();
+$jUsers->users->$sUniqueId = new stdClass();
+$jUsers->users->$sUniqueId->isAgent = 'true';
+$jUsers->users->$sUniqueId->id = $sUniqueId;
+$jUsers->users->$sUniqueId->name = $sUserName;
+$jUsers->users->$sUniqueId->lastName = $sFamilyName;
+$jUsers->users->$sUniqueId->email = $sEmail;
+$jUsers->users->$sUniqueId->password = $sPassword;
+$jUsers->users->$sUniqueId->phone = $sPhone;
+$jUsers->users->$sUniqueId->properties = new stdClass();
 
 $sUsers = json_encode($jUsers);
 file_put_contents('../data.json', $sUsers);
 
-session_start();s
-$_SESSION['jUser'] = $jUsers->agents->$sUniqueId;
+session_start();
+$_SESSION['jUser'] = $jUsers->users->$sUniqueId;
 
 echo '{
     "status": 1 ,
     "message": "agent was registred"
 }';
+
 
 
 function sendErrorMessage($sMessage,  $iLine){

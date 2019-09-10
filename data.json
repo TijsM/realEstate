@@ -1,101 +1,29 @@
 {
     "users": {
-        "sdlkfjdslnmsdf": {
-            "id": "sdlkfjdslnmsdf",
+        "5d775955c6503": {
+            "isAgent": "false",
+            "id": "5d775955c6503",
             "name": "Tijs",
             "lastName": "Martens",
-            "email": "tijs.martens@gmail.com",
+            "email": "tijs@gmail.com",
             "password": "password"
         },
-        "5d7695941af22": {
-            "id": "5d7695941af22",
-            "name": "dsfsqd",
-            "lastName": "testfamname",
-            "email": "test@gmail.om",
-            "password": "password"
-        },
-        "5d76999213ce9": {
-            "id": "5d76999213ce9",
-            "name": "user",
-            "lastName": "user001",
-            "email": "tijs@user.com",
-            "password": "Password1111"
-        },
-        "5d7699c7dc39e": {
-            "id": "5d7699c7dc39e",
-            "name": "Tijs",
-            "lastName": "User001",
-            "email": "user@gmail.com",
-            "password": "password"
-        },
-        "5d7699f1ae7a6": {
-            "id": "5d7699f1ae7a6",
-            "name": "Koen",
-            "lastName": "de gaver",
-            "email": "user@gmail.com",
-            "password": "password"
-        },
-        "5d772fad1976e": {
-            "id": "5d772fad1976e",
+        "5d77596496306": {
+            "isAgent": "false",
+            "id": "5d77596496306",
             "name": "koen",
-            "lastName": "krukke",
-            "email": "koen@gmail.com",
-            "password": "password"
+            "lastName": "jansen",
+            "email": "sdklfj@msldkjf.com",
+            "password": "dslmfkjsqdmlf"
         },
-        "5d77301793086": {
-            "id": "5d77301793086",
-            "name": "Jef",
-            "lastName": "Klakke",
-            "email": "jef@gmail.com",
-            "password": "slmdkfjslmkdjf"
-        }
-    },
-    "agents": {
-        "mlksdjmlksqdjf": {
-            "id": "mlksdjmlksqdjf",
+        "5d775979c52b2": {
+            "isAgent": "true",
+            "id": "5d775979c52b2",
             "name": "agent",
-            "passowrd": "password",
-            "lastName": "agent",
-            "email": "agent@agent.com",
-            "phone": "+32499821224",
-            "properties": {
-                "name": "casa vila",
-                "price": 1000000,
-                "location": {
-                    "longtitude": 55.699409,
-                    "latitude": 12.554183,
-                    "streetName": "bekken",
-                    "houseNumber": 8,
-                    "city": "Ghent",
-                    "zipCode": "9000"
-                }
-            }
-        },
-        "5d772e31adee4": {
-            "id": "5d772e31adee4",
-            "name": "dsfsqd",
-            "lastName": "testfamname",
-            "email": "test@gmail.om",
-            "password": "password",
-            "phone": "+32499721771",
-            "properties": {}
-        },
-        "5d772e48b1398": {
-            "id": "5d772e48b1398",
-            "name": "dsfsqd",
-            "lastName": "testfamname",
-            "email": "test@gmail.om",
-            "password": "password",
-            "phone": "+32499721771",
-            "properties": {}
-        },
-        "5d772fcfbbc07": {
-            "id": "5d772fcfbbc07",
-            "name": "Tom",
-            "lastName": "DeConink",
-            "email": "tom@gmail.com",
-            "password": "password",
-            "phone": "+32488754117",
+            "lastName": "dsklfj",
+            "email": "sdlkfj@gmlksfd.com",
+            "password": "sdfsdfqs",
+            "phone": "+32499785117",
             "properties": {}
         }
     }

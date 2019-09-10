@@ -13,7 +13,6 @@ require_once(__DIR__ . '/components/top.php');
                 </button>
             </h2>
         </div>
-
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
                 <form method="POST" id="loginForm">
@@ -88,7 +87,7 @@ require_once(__DIR__ . '/components/top.php');
                                             </div>
                                             <div class="form-group">
                                                 <label for="txtRegisterAgentPhone">phone number</label>
-                                                <input type="password" class="form-control" id="txtRegisterAgentPhone" name='phoneNumber' placeholder="phone number">
+                                                <input type="text" class="form-control" id="txtRegisterAgentPhone" name='phoneNumber' placeholder="phone number">
                                             </div>
                                             <div class="form-group">
                                                 <label for="txtRegisterAgentPassword">Password</label>

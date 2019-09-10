@@ -42,6 +42,7 @@ $('#registerUserSubmit').click(function(){
 
 
 $('#registerAgentSubmit').click(function(){
+    console.log('test');
     $.ajax({
         url : "api/api-register-agent.php", 
         method : "POST", 
@@ -49,6 +50,7 @@ $('#registerAgentSubmit').click(function(){
         dataType : "JSON"
     })
     .done(function(JData){
+        console.log('test');
         if(JData.status === 1){
             window.location.pathname = 'PROJECT/profile.php'
         }
