@@ -13,6 +13,27 @@
             "lastName": "testfamname",
             "email": "test@gmail.om",
             "password": "password"
+        },
+        "5d76999213ce9": {
+            "id": "5d76999213ce9",
+            "name": "user",
+            "lastName": "user001",
+            "email": "tijs@user.com",
+            "password": "Password1111"
+        },
+        "5d7699c7dc39e": {
+            "id": "5d7699c7dc39e",
+            "name": "Tijs",
+            "lastName": "User001",
+            "email": "user@gmail.com",
+            "password": "password"
+        },
+        "5d7699f1ae7a6": {
+            "id": "5d7699f1ae7a6",
+            "name": "Koen",
+            "lastName": "de gaver",
+            "email": "user@gmail.com",
+            "password": "password"
         }
     },
     "agents": {

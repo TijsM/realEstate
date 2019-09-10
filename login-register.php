@@ -51,7 +51,7 @@ require_once(__DIR__ . '/components/top.php');
                             <div class="col-8">
                                 <div class="tab-content" id="nav-tabContent">
                                     <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                                        <form method="POST" id="loginForm">
+                                        <form method="POST" id="registerUserForm">
                                             <div class="form-group">
                                                 <label for="txtRegisterUserName">Name</label>
                                                 <input type="text" class="form-control" id="txtRegisterUserName" name="name" placeholder="Enter first name">
@@ -68,7 +68,7 @@ require_once(__DIR__ . '/components/top.php');
                                                 <label for="txtRegisterUserPassword">Password</label>
                                                 <input type="password" class="form-control" id="txtRegisterUserPassword" name='password' placeholder="Password">
                                             </div>
-                                            <button type="button" class="btn btn-primary" id="loginSubmit">Submit</button>
+                                            <button type="button" class="btn btn-primary" id="registerUserSubmit">Submit</button>
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">

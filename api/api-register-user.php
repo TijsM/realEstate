@@ -61,7 +61,7 @@ file_put_contents('../data.json', $sUsers);
 $_SESSION['jUser'] = $jUsers->users->$sUniqueId;
 
 echo '{
-    "status": ,
+    "status": 1 ,
     "message": "user was registred"
 }';
 
