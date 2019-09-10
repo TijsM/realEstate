@@ -16,7 +16,13 @@ $('#loginSubmit').click(function(){
         window.location.pathname = 'PROJECT/profile.php'
         }
         else{
-            console.log('login failed');
+            $('#loginError').empty();
+            $('#loginError').html(`
+            <div class="alert alert-danger credentialError" role="alert">
+                ${jData.message}
+            </div>
+            `)
+
         }
       })
 })
@@ -30,12 +36,17 @@ $('#registerUserSubmit').click(function(){
         data : $('#registerUserForm').serialize(), 
         dataType : "JSON"
     })
-    .done(function(JData){
-        if(JData.status === 1){
+    .done(function(jData){
+        if(jData.status === 1){
             window.location.pathname = 'PROJECT/profile.php'
         }
         else{
-            console.log('register failed');
+            $('#registerUserError').empty();
+            $('#registerUserError').html(`
+            <div class="alert alert-danger credentialError" role="alert">
+                ${jData.message}
+            </div>
+            `)
         }
     })
 })
@@ -49,13 +60,18 @@ $('#registerAgentSubmit').click(function(){
         data : $('#registerAgentForm').serialize(), 
         dataType : "JSON"
     })
-    .done(function(JData){
+    .done(function(jData){
         console.log('test');
-        if(JData.status === 1){
+        if(jData.status === 1){
             window.location.pathname = 'PROJECT/profile.php'
         }
         else{
-            console.log('register failed');
+            $('#registerAgentError').empty();
+            $('#registerAgentError').html(`
+            <div class="alert alert-danger credentialError" role="alert">
+                ${jData.message}
+            </div>
+            `)
         }
     })
 })

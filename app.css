@@ -17,6 +17,10 @@
     text-emphasis: none;
 }
 
+.credentialError, .registerUserError{
+    margin-top: 45px;
+}
+
 /*** FOOTER ********************************************************************/
 
 footer{

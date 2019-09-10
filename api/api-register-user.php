@@ -41,6 +41,7 @@ if (strlen($sPassword) > 50){
 }
 
 
+
 //write the new data to the data file
 $sUsers = file_get_contents('../data.json');
 $jUsers = json_decode($sUsers);

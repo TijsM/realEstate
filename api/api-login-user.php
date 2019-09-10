@@ -10,6 +10,8 @@ session_start();
 //     }';
 //     exit;
 // }
+
+
 //check if mail is filled in
 if (empty($_POST['email'])){
     sendErrorMessage('email address missing', __LINE__);
@@ -55,6 +57,9 @@ foreach($jData->users as $sKey => $jProp){
             // $sTestSession = $_SESSION['sUserId'];
             // echo "in session: $sTestSession";
             exit;
+        }
+        else{
+            sendErrorMessage('password or mail not correct', __LINE__);
         }
     }
 }

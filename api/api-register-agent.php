@@ -52,6 +52,7 @@ if (strlen($sPassword) > 50){
 $sUsers = file_get_contents('../data.json');
 $jUsers = json_decode($sUsers);
 
+
 $sUniqueId = uniqid();
 $jUsers->users->$sUniqueId = new stdClass();
 $jUsers->users->$sUniqueId->isAgent = 'true';

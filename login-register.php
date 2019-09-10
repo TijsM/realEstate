@@ -25,6 +25,8 @@ require_once(__DIR__ . '/components/top.php');
                         <input type="password" class="form-control" id="txtLoginPassword" name='password' placeholder="Password">
                     </div>
                     <button type="button" class="btn btn-primary" id="loginSubmit">Submit</button>
+
+                    <div id="loginError"></div>
                 </form>
             </div>
         </div>
@@ -69,6 +71,9 @@ require_once(__DIR__ . '/components/top.php');
                                                 <input type="password" class="form-control" id="txtRegisterUserPassword" name='password' placeholder="Password">
                                             </div>
                                             <button type="button" class="btn btn-primary" id="registerUserSubmit">Submit</button>
+                                            <div id="registerUserError">
+
+                                            </div>
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
@@ -95,13 +100,13 @@ require_once(__DIR__ . '/components/top.php');
                                             </div>
 
                                             <button type="button" class="btn btn-primary" id="registerAgentSubmit">Submit</button>
+
+                                            <div id="registerAgentError"></div>
                                         </form>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
