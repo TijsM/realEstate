@@ -154,3 +154,20 @@ $('#deleteUser').click(function () {
         })
 })
 
+$('#linkLogout').click(function () {
+    console.log('test');
+    $.ajax({
+        url: "api/api-logout.php",
+        dataType: "JSON"
+    })
+        .done(function (jData) {
+            
+            if (jData.status == 1) {
+                window.location.pathname = 'PROJECT/login-register.php'
+            }
+            else{
+                console.log('logging out failed')
+            }
+            
+        })
+})

@@ -40,8 +40,12 @@ if (strlen($_POST['password']) > 50){
 $sData = file_get_contents('../data.json');
 $jData = json_decode($sData);
 
+$bInFile = 'false';
+
 foreach($jData->users as $sKey => $jProp){
     if($jProp->email == $_POST['email']){
+
+        $bInFile = 'true';
 
         if($jProp->password == $_POST['password']){
           
@@ -62,6 +66,10 @@ foreach($jData->users as $sKey => $jProp){
             sendErrorMessage('password or mail not correct', __LINE__);
         }
     }
+}
+
+if($bInFile == 'false'){
+    sendErrorMessage('password is not correct', __LINE__);
 }
 
 

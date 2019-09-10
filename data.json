@@ -16,14 +16,14 @@
             "email": "koen@gmail.com",
             "password": "password"
         },
-        "5d779dcf40f82": {
+        "5d77f5f59b922": {
             "isAgent": "true",
-            "id": "5d779dcf40f82",
-            "name": "agents",
+            "id": "5d77f5f59b922",
+            "name": "Agent",
             "lastName": "prof",
             "email": "agent@professional.com",
             "password": "password",
-            "phone": "+32455875115",
+            "phone": "+32488754117",
             "properties": {}
         }
     }

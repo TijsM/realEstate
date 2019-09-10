@@ -3,7 +3,6 @@ require_once(__DIR__ . '/components/top.php');
 ?>
 
 <?php
-session_start();
 $jUser = $_SESSION['jUser'];
 $sUserName = $jUser->name;
 $sUserFamilyname = $jUser->lastName;
