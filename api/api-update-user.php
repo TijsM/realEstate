@@ -1,10 +1,17 @@
 <?php
-$sUserId = $_POST['id'];
+$sUserId = $_POST['userId'];
 $sUserName = $_POST['name'];
 $sFamilyName = $_POST['familyName'];
 $sEmail = $_POST['email'];
 
+session_start();
+//  echo $_SESSION['jUser']->id;
+//  echo '<div></div>';
+//  echo $sUserId;
 
+if($_SESSION['jUser']->id != $sUserId){
+    sendErrorMessage('user is not logged in or does not has this permition', __LINE__);
+}
 
 if (empty($sUserId)) {
     sendErrorMessage('id is not found', __LINE__);
@@ -47,14 +54,12 @@ $jUsers->users->$sUserId->email = $sEmail;
 $sUsers = json_encode($jUsers);
 file_put_contents('../data.json', $sUsers);
 
-
-session_start();
 $_SESSION['jUser'] = $jUsers->users->$sUserId;
 
 
 echo '{
     "status": 1 ,
-    "message": "agent was registred"
+    "message": "user was updated"
 }';
 
 
