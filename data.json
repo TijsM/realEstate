@@ -56,6 +56,24 @@
                     "zipCode": "9000"
                 }
             }
+        },
+        "5d772e31adee4": {
+            "id": "5d772e31adee4",
+            "name": "dsfsqd",
+            "lastName": "testfamname",
+            "email": "test@gmail.om",
+            "password": "password",
+            "phone": "+32499721771",
+            "properties": {}
+        },
+        "5d772e48b1398": {
+            "id": "5d772e48b1398",
+            "name": "dsfsqd",
+            "lastName": "testfamname",
+            "email": "test@gmail.om",
+            "password": "password",
+            "phone": "+32499721771",
+            "properties": {}
         }
     }
 }
