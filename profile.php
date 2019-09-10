@@ -54,6 +54,8 @@ if ($sUserIsAgent == 'true') {
     ?>
 
     <button type="button" class="btn btn-primary" id="frmUpdateUserConfirm">Submit</button>
+    <button type="button" class="btn btn-danger" id="deleteUser">Delete this account</button>
+  
     <div id="updateError"></div>
   </form>
 

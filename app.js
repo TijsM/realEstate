@@ -85,47 +85,72 @@ $('#frmUpdateUserConfirm').click(function () {
         //agent
         console.log('in agent update');
         $.ajax({
-            url : "api/api-update-agent.php", 
-            method : "POST", 
-            data : $('#frmUpdateUser').serialize(), 
-            dataType : "JSON"
+            url: "api/api-update-agent.php",
+            method: "POST",
+            data: $('#frmUpdateUser').serialize(),
+            dataType: "JSON"
         })
-        .done(function(jData){
-            // console.log('test');
-            if(jData.status === 1){
-                window.location.pathname = 'PROJECT/profile.php'
-            }
-            else{
-                $('#updateError').empty();
-                $('#updateError').html(`
+            .done(function (jData) {
+                // console.log('test');
+                if (jData.status === 1) {
+                    window.location.pathname = 'PROJECT/profile.php'
+                }
+                else {
+                    $('#updateError').empty();
+                    $('#updateError').html(`
                 <div class="alert alert-danger credentialError" role="alert">
                     ${jData.message}
                 </div>
                 `)
-            }
-        })
+                }
+            })
     }
-    else{
+    else {
         //user
         console.log('in user update');
         $.ajax({
-            url : "api/api-update-user.php", 
-            method : "POST", 
-            data : $('#frmUpdateUser').serialize(), 
-            dataType : "JSON"
+            url: "api/api-update-user.php",
+            method: "POST",
+            data: $('#frmUpdateUser').serialize(),
+            dataType: "JSON"
         })
-        .done(function(jData){
-            if(jData.status === 1){
-                window.location.pathname = 'PROJECT/profile.php'
-            }
-            else{
-                $('#updateError').empty();
-                $('#updateError').html(`
+            .done(function (jData) {
+                if (jData.status === 1) {
+                    window.location.pathname = 'PROJECT/profile.php'
+                }
+                else {
+                    $('#updateError').empty();
+                    $('#updateError').html(`
                 <div class="alert alert-danger credentialError" role="alert">
                     ${jData.message}
                 </div>
                 `)
-            }
-        })
+                }
+            })
     }
 })
+
+$('#deleteUser').click(function () {
+    console.log('test');
+    $.ajax({
+        url: "api/api-delete-user.php",
+        method: "POST",
+        data: $('#frmUpdateUser').serialize(),
+        dataType: "JSON"
+    })
+        .done(function (jData) {
+            console.log('test');
+            if (jData.status == 1) {
+                window.location.pathname = 'PROJECT/'
+            }
+            else {
+                $('#registerAgentError').empty();
+                $('#registerAgentError').html(`
+            <div class="alert alert-danger credentialError" role="alert">
+                ${jData.message}
+            </div>
+            `)
+            }
+        })
+})
+
