@@ -4,7 +4,7 @@ require_once(__DIR__ . '/components/top.php');
 
 <h1 class="text-center titleLogin">welcome (back) to <strong>Houser</strong></h1>
 
-<div class="accordion col col-lg-6 align-self-center offset-lg-3 loginRegisterContainer" id="accordionExample">
+<div class="accordion col col-lg-6  offset-lg-3 loginRegisterContainer" id="accordionExample">
     <div class="card">
         <div class="card-header" id="headingOne">
             <h2 class="mb-0">
@@ -113,9 +113,6 @@ require_once(__DIR__ . '/components/top.php');
         </div>
     </div>
 </div>
-
-
-
 
 <?php
 require_once(__DIR__ . '/components/bottom.php');

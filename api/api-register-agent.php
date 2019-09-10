@@ -8,6 +8,10 @@ $sPhone = $_POST['phoneNumber'];
 
 // echo $sPhone;
 
+
+
+
+
 if(empty($sUserName)){
     sendErrorMessage('name is not filled in', __LINE__);
 }
@@ -47,10 +51,15 @@ if (strlen($sPassword) > 50){
     sendErrorMessage('password too long, must be at least 50 chars long', __line__);    
 }
 
-
 //write the new data to the data file
 $sUsers = file_get_contents('../data.json');
 $jUsers = json_decode($sUsers);
+
+foreach($jUsers->users as $sUserId => $jUser){
+    if($sEmail == $jUser->email){
+        sendErrorMessage('This email address is already in use, try to log in', __LINE__);
+    }
+}
 
 
 $sUniqueId = uniqid();
