@@ -57,7 +57,7 @@ $jUsers->users->$sUniqueId->password = $sPassword;
 $sUsers = json_encode($jUsers);
 file_put_contents('../data.json', $sUsers);
 
-
+session_start();
 $_SESSION['jUser'] = $jUsers->users->$sUniqueId;
 
 echo '{

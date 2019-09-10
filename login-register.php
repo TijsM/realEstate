@@ -2,6 +2,7 @@
 require_once(__DIR__ . '/components/top.php');
 ?>
 
+<h1 class="text-center titleLogin">welcome (back) to <strong>Houser</strong></h1>
 
 <div class="accordion col col-lg-6 align-self-center offset-lg-3 loginRegisterContainer" id="accordionExample">
     <div class="card">
@@ -72,7 +73,7 @@ require_once(__DIR__ . '/components/top.php');
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                                        <form method="POST" id="loginForm">
+                                        <form method="POST" id="registerAgentForm">
                                             <div class="form-group">
                                                 <label for="txtRegisterAgentName">Name</label>
                                                 <input type="text" class="form-control" id="txtRegisterAgentName" name="name" placeholder="Enter first name">
@@ -94,7 +95,7 @@ require_once(__DIR__ . '/components/top.php');
                                                 <input type="password" class="form-control" id="txtRegisterAgentPassword" name='password' placeholder="Password">
                                             </div>
 
-                                            <button type="button" class="btn btn-primary" id="loginSubmit">Submit</button>
+                                            <button type="button" class="btn btn-primary" id="registerAgentSubmit">Submit</button>
                                         </form>
                                     </div>
 

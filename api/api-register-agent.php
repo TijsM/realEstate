@@ -65,6 +65,7 @@ $jUsers->agents->$sUniqueId->properties = new stdClass();
 $sUsers = json_encode($jUsers);
 file_put_contents('../data.json', $sUsers);
 
+session_start();s
 $_SESSION['jUser'] = $jUsers->agents->$sUniqueId;
 
 echo '{

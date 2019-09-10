@@ -2,8 +2,13 @@
 
 /*** LOGIN ********************************************************************/
 
+.titleLogin{
+    margin-top: 85px;
+    color: black;
+}
+
 .loginRegisterContainer{
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .accordion-title

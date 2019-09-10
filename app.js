@@ -6,10 +6,10 @@ $('#loginSubmit').click(function(){
     // console.log(sUserPassword);
 
     $.ajax({
-        url : "api/api-login-user.php", // the end-point
-        method : "POST", // pass via post
-        data : $('#loginForm').serialize(), // create the form to be passed
-        dataType : "JSON" // get text and convert it into JSON
+        url : "api/api-login-user.php", 
+        method : "POST",
+        data : $('#loginForm').serialize(),
+        dataType : "JSON" 
       })
       .done( function( jData  ){
         if(jData.status === 1){
@@ -25,10 +25,28 @@ $('#registerUserSubmit').click(function(){
     // let sName = $('#txtRegisterUserName').val();
     // console.log(sName);
     $.ajax({
-        url : "api/api-register-user.php", // the end-point
-        method : "POST", // pass via post
-        data : $('#registerUserForm').serialize(), // create the form to be passed
-        dataType : "JSON" // get text and convert it into JSON
+        url : "api/api-register-user.php", 
+        method : "POST", 
+        data : $('#registerUserForm').serialize(), 
+        dataType : "JSON"
+    })
+    .done(function(JData){
+        if(JData.status === 1){
+            window.location.pathname = 'PROJECT/profile.php'
+        }
+        else{
+            console.log('register failed');
+        }
+    })
+})
+
+
+$('#registerAgentSubmit').click(function(){
+    $.ajax({
+        url : "api/api-register-agent.php", 
+        method : "POST", 
+        data : $('#registerAgentForm').serialize(), 
+        dataType : "JSON"
     })
     .done(function(JData){
         if(JData.status === 1){

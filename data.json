@@ -34,6 +34,20 @@
             "lastName": "de gaver",
             "email": "user@gmail.com",
             "password": "password"
+        },
+        "5d772fad1976e": {
+            "id": "5d772fad1976e",
+            "name": "koen",
+            "lastName": "krukke",
+            "email": "koen@gmail.com",
+            "password": "password"
+        },
+        "5d77301793086": {
+            "id": "5d77301793086",
+            "name": "Jef",
+            "lastName": "Klakke",
+            "email": "jef@gmail.com",
+            "password": "slmdkfjslmkdjf"
         }
     },
     "agents": {
@@ -73,6 +87,15 @@
             "email": "test@gmail.om",
             "password": "password",
             "phone": "+32499721771",
+            "properties": {}
+        },
+        "5d772fcfbbc07": {
+            "id": "5d772fcfbbc07",
+            "name": "Tom",
+            "lastName": "DeConink",
+            "email": "tom@gmail.com",
+            "password": "password",
+            "phone": "+32488754117",
             "properties": {}
         }
     }
