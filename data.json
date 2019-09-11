@@ -6,7 +6,21 @@
             "name": "Tijs",
             "lastName": "Martens",
             "email": "tijs@gmail.com",
-            "password": "password"
+            "password": "password",
+            "properties": {
+                "5d78175976237": "house gent",
+                "5d781776c37d7": "house gent",
+                "5d781786a162d": "house gent",
+                "5d78181bb90a3": "house gent",
+                "5d78185416600": "house gent",
+                "5d781855cf315": "house gent",
+                "5d781896d7135": "house gent",
+                "5d7818987c47d": "house gent",
+                "5d78189a16075": "house gent",
+                "5d78a25f4ca3a": "house gent",
+                "5d78a267477f3": "house gent",
+                "5d78a3352a785": "house gent"
+            }
         },
         "5d779da2a3f3a": {
             "isAgent": "false",
@@ -24,7 +38,129 @@
             "email": "agent@professional.com",
             "password": "password",
             "phone": "+32488754117",
-            "properties": {}
+            "properties": {
+                "5d789c7c43f69": "dsfkl",
+                "5d789f42379bd": "sdf",
+                "5d789f54b9ad2": "sdf",
+                "5d78a22b3480e": "sdjlfmsd",
+                "5d78a33e336e7": "sdjlfmsd",
+                "5d78a3e0a98fc": "sdjlfmsd",
+                "5d78a5ea8c325": "sdjlfmsd",
+                "5d78a608dcfcd": "sdjlfmsd",
+                "5d78a67755a60": "sdjlfmsd",
+                "5d78a69e391ae": "sdjlfmsd",
+                "5d78a740d8d1f": "sdfkmjsd"
+            }
+        },
+        "": {
+            "properties": {
+                "5d789c00be55b": "dsfsd"
+            }
+        }
+    },
+    "properties": {
+        "5d78a5ea8c325": {
+            "agentId": "5d77f5f59b922",
+            "uploadTime": 1568187882,
+            "name": "sdjlfmsd",
+            "price": "8654",
+            "size": "654",
+            "bedrooms": "654",
+            "description": "sdfsdf",
+            "location": {
+                "street": "sdfsdf",
+                "houseNumber": "54",
+                "zipCode": "654",
+                "city": "sdfsd",
+                "country": "sdfsd",
+                "longtitude": "654325",
+                "latitude": "1654654"
+            },
+            "images": {}
+        },
+        "5d78a608dcfcd": {
+            "agentId": "5d77f5f59b922",
+            "uploadTime": 1568187912,
+            "name": "sdjlfmsd",
+            "price": "8654",
+            "size": "654",
+            "bedrooms": "654",
+            "description": "sdfsdf",
+            "location": {
+                "street": "sdfsdf",
+                "houseNumber": "54",
+                "zipCode": "654",
+                "city": "sdfsd",
+                "country": "sdfsd",
+                "longtitude": "654325",
+                "latitude": "1654654"
+            },
+            "images": {}
+        },
+        "5d78a67755a60": {
+            "agentId": "5d77f5f59b922",
+            "uploadTime": 1568188023,
+            "name": "sdjlfmsd",
+            "price": "8654",
+            "size": "654",
+            "bedrooms": "654",
+            "description": "sdfsdf",
+            "location": {
+                "street": "sdfsdf",
+                "houseNumber": "54",
+                "zipCode": "654",
+                "city": "sdfsd",
+                "country": "sdfsd",
+                "longtitude": "654325",
+                "latitude": "1654654"
+            },
+            "images": {
+                "0": "5d78a67755a60-0.png"
+            }
+        },
+        "5d78a69e391ae": {
+            "agentId": "5d77f5f59b922",
+            "uploadTime": 1568188062,
+            "name": "sdjlfmsd",
+            "price": "8654",
+            "size": "654",
+            "bedrooms": "654",
+            "description": "sdfsdf",
+            "location": {
+                "street": "sdfsdf",
+                "houseNumber": "54",
+                "zipCode": "654",
+                "city": "sdfsd",
+                "country": "sdfsd",
+                "longtitude": "654325",
+                "latitude": "1654654"
+            },
+            "images": {}
+        },
+        "5d78a740d8d1f": {
+            "agentId": "5d77f5f59b922",
+            "uploadTime": 1568188224,
+            "name": "sdfkmjsd",
+            "price": "42",
+            "size": "2",
+            "bedrooms": "21",
+            "description": "sdfsdf",
+            "location": {
+                "street": "dsfsd",
+                "houseNumber": "21",
+                "zipCode": "51321",
+                "city": "sdfds",
+                "country": "321sdsdf",
+                "longtitude": "32132123",
+                "latitude": "321321321"
+            },
+            "images": {
+                "0": "5d78a740d8d1f-0.png",
+                "1": "5d78a740d8d1f-1.png",
+                "2": "5d78a740d8d1f-2.png",
+                "3": "5d78a740d8d1f-3.png",
+                "4": "5d78a740d8d1f-4.png"
+            }
         }
     }
 }

@@ -9,9 +9,6 @@ $sPhone = $_POST['phoneNumber'];
 // echo $sPhone;
 
 
-
-
-
 if(empty($sUserName)){
     sendErrorMessage('name is not filled in', __LINE__);
 }

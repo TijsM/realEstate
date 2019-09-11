@@ -171,3 +171,41 @@ $('#linkLogout').click(function () {
             
         })
 })
+
+
+$('#btnSubmitProperty').click(function (e) {
+    console.log('in add property');
+
+    //stop auto refresh
+    e.preventDefault();
+
+    var formData = new FormData(document.getElementById('frmAddProperty'));
+
+    $.ajax({
+        url: "api/api-add-property.php",
+        method: 'POST',
+        data: formData,
+        dataType: "JSON",
+        cache: false,
+        contentType: false,
+        processData: false
+    })
+        .done(function (jData) {
+            
+            if (jData.status == 1) {
+                // window.location.pathname = 'PROJECT/login-register.php'
+            }
+            else{
+                console.log('adding property failed');
+                console.log(jData.message);
+
+                $('#registerAgentError').empty();
+                $('#registerAgentError').html(`
+            <div class="alert alert-danger credentialError" role="alert">
+                ${jData.message}
+            </div>
+            `)
+            }
+            
+        })
+})

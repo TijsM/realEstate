@@ -1,0 +1,36 @@
+property
+    agent
+	name
+    date-uploaded
+	price
+	size
+	bedrooms
+	description
+	address
+		houseno
+		street
+		place
+		zipcode
+        country
+	cordinates
+		longtitude
+		latitude
+    images
+        png1
+        png2
+        ...
+
+users(agent)
+    properties
+        prop1
+        prop2
+        prop3
+
+
+todo for upload property
+    - validation
+    - frontend
+
+https://wisdmlabs.com/blog/access-file-before-upload-using-jquery-ajax/
+	
+		

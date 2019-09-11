@@ -66,10 +66,6 @@ if ($isLogedIn == 'true') {
             </li>
             ";
         }
-
-
         ?>
-
-        
       </ul>
   </nav>
