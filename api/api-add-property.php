@@ -72,7 +72,7 @@ $jData->properties->$sUniqueKey->location->city = $sCity;
 $jData->properties->$sUniqueKey->location->country = $sCountry;
 $jData->properties->$sUniqueKey->location->longtitude = $sLongtitude;
 $jData->properties->$sUniqueKey->location->latitude = $sLatitude;
-$jData->properties->$sUniqueKey->images = new stdClass();
+$jData->properties->$sUniqueKey->images = [];
 
 //adding saving the images
 // print_r($aImages);
@@ -86,7 +86,7 @@ for($index = 0; $index <= $iAmountOfImages-1; $index++){
     move_uploaded_file($aImages['images']['tmp_name'][$index],__DIR__."/../assets/uploadedProperties/$fileName");
 
     //saving the path
-    $jData->properties->$sUniqueKey->images->$index = $fileName;
+    $jData->properties->$sUniqueKey->images[$index] = $fileName;
 }
 
 
