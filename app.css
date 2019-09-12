@@ -69,6 +69,19 @@
     margin: 5%;
 }
 
+#propertiesContainer .active{
+    background-image: radial-gradient(circle, #fcfeff, #f2fafe, #e7f6fe, #ddf3fd, #d2effc);
+    box-shadow: 0px 0px 37px 32px rgba(0, 0, 0, 0.336);
+}
+
+#mapContainer .active{
+    background-color:  #515152a1;
+    box-shadow: 0px 0px 15px 15px #515152a1;
+    font-size: 3em;
+
+
+}
+
 /*** PROPERTY DETAILS ********************************************************************/
 #goBackToProperties{
     margin-top: 25px;
