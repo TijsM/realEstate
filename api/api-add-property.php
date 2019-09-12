@@ -57,6 +57,7 @@ $jData = json_decode($sData);
 
 
 $jData->properties->$sUniqueKey = new stdClass();
+$jData->properties->$sUniqueKey->propertyId = $sUniqueKey;
 $jData->properties->$sUniqueKey->agentId = $sAgentId;
 $jData->properties->$sUniqueKey->uploadTime =$sUploadedTime;
 $jData->properties->$sUniqueKey->name = $sName;

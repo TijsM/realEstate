@@ -42,19 +42,22 @@ $jProperties = $jData->properties;
             $firstImage = "assets/uploadedProperties/{$jProp->images[0]}";
             echo '
             <div class="card propertyCard">
+                
                 <img src="' . $firstImage . '" class="card-img-top" alt="img house">
                 <div class="card-body">
                     <h3 class="card-title">' . $jProp->name . '</h3>
-                    <h5>' . $jProp->price . '</h5>
-                    <p>' . $jProp->bedrooms . '</p>
+                    <h5>€' . $jProp->price . '</h5>
+                    <p> bedrooms: ' . $jProp->bedrooms . '</p>
                     <p>' . $jProp->location->city . ' - ' . $jProp->location->street . '</p>
+                    <a class="btn btn-primary" href="property-details.php?id='.$jProp->propertyId.'" role="button">
+                        view details
+                    </a>
                 </div>
             </div> 
             ';
         }
         ?>
     </div>
-</div>
 </div>
 
 

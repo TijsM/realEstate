@@ -36,6 +36,10 @@ if ($isLogedIn == 'true') {
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+
+        <li class='nav-item '>
+          <a class='nav-link' href='./properties.php'>find properties<span class='sr-only'>(current)</span></a>
+        </li>
         <?php
         if ($isLogedIn == 'false') {
           echo "

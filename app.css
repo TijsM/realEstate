@@ -69,7 +69,42 @@
     margin: 5%;
 }
 
+/*** PROPERTY DETAILS ********************************************************************/
+#goBackToProperties{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.jumboPropertyDetails{
+    margin-top: 75px;
+}
 
+.carousel-inner{
+    height: auto;
+    width: 75%;
+    margin-left: 12.5%;
+    overflow: hidden;
+}
+
+.propertyDetailsBlock{
+    line-height: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.jumboPropertyDetails h1{
+    /* margin-top: 40px; */
+    margin-bottom: 45px;
+}
+
+.jumboPropertyDetails h3{
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+#btnSendEmail{
+    margin-top: 35px;
+}
 /*** FOOTER ********************************************************************/
 
 footer{

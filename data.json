@@ -52,19 +52,26 @@
                 "5d78a69e391ae": "sdjlfmsd",
                 "5d78a740d8d1f": "sdfkmjsd",
                 "5d78d3f3e860f": "Villa In the countryside",
-                "5d78d9931c616": "Villa In the city centre"
+                "5d78d9931c616": "Villa In the city centre",
+                "5d796bba35e73": "appartment in centre of copenhagen"
             }
         },
-        "": {
+        "5d7a063e819d8": {
+            "isAgent": "true",
+            "id": "5d7a063e819d8",
+            "name": "Tijs",
+            "lastName": "Martens",
+            "email": "tijs.martens.tijs@gmail.com",
+            "password": "password",
+            "phone": "+32499721771",
             "properties": {
-                "5d789c00be55b": "dsfsd",
-                "5d78d1c94fd19": null,
-                "5d78d3d036b1e": null
+                "5d7a06ac5d922": "Well equiped house in the neighbourhoud of Ghent"
             }
         }
     },
     "properties": {
         "5d78d211c775b": {
+            "propertyId": "5d78d211c775b",
             "agentId": "5d775955c6503",
             "uploadTime": 1568199185,
             "name": "dslkfj",
@@ -87,6 +94,7 @@
             ]
         },
         "5d78d3f3e860f": {
+            "propertyId": "5d78d3f3e860f",
             "agentId": "5d77f5f59b922",
             "uploadTime": 1568199667,
             "name": "Villa In the countryside",
@@ -109,6 +117,7 @@
             ]
         },
         "5d78d9931c616": {
+            "propertyId": "5d78d9931c616",
             "agentId": "5d77f5f59b922",
             "uploadTime": 1568201107,
             "name": "Villa In the city centre",
@@ -128,6 +137,55 @@
             "images": [
                 "5d78d9931c616-1.png",
                 "5d78d9931c616-0.png"
+            ]
+        },
+        "5d796bba35e73": {
+            "propertyId": "5d796bba35e73",
+            "agentId": "5d77f5f59b922",
+            "uploadTime": 1568238522,
+            "name": "appartment in centre of copenhagen",
+            "price": "98456",
+            "size": "6542",
+            "bedrooms": "4",
+            "description": "lovely appartment near to a park in the neighborhoud of Norrebro",
+            "location": {
+                "street": "17",
+                "houseNumber": "Dortheavej",
+                "zipCode": "2400",
+                "city": "Copenhagen",
+                "country": "Denmark",
+                "longtitude": "51.65126512",
+                "latitude": "3.6513535"
+            },
+            "images": [
+                "5d796bba35e73-0.png",
+                "5d796bba35e73-1.png"
+            ]
+        },
+        "5d7a06ac5d922": {
+            "propertyId": "5d7a06ac5d922",
+            "agentId": "5d7a063e819d8",
+            "uploadTime": 1568278188,
+            "name": "Well equiped house in the neighbourhoud of Ghent",
+            "price": "535000",
+            "size": "854",
+            "bedrooms": "3",
+            "description": "This house has a big garden and is located in a street where there is no traffic. this makes it perfect for a young family.",
+            "location": {
+                "street": "Bekken",
+                "houseNumber": "8",
+                "zipCode": "9810",
+                "city": "Nazareth",
+                "country": "Belgium",
+                "longtitude": "51.65213",
+                "latitude": "3.71654"
+            },
+            "images": [
+                "5d7a06ac5d922-0.png",
+                "5d7a06ac5d922-1.png",
+                "5d7a06ac5d922-2.png",
+                "5d7a06ac5d922-3.png",
+                "5d7a06ac5d922-4.png"
             ]
         }
     }

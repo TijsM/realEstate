@@ -161,14 +161,14 @@ $('#linkLogout').click(function () {
         dataType: "JSON"
     })
         .done(function (jData) {
-            
+
             if (jData.status == 1) {
                 window.location.pathname = 'PROJECT/login-register.php'
             }
-            else{
+            else {
                 console.log('logging out failed')
             }
-            
+
         })
 })
 
@@ -191,11 +191,11 @@ $('#btnSubmitProperty').click(function (e) {
         processData: false
     })
         .done(function (jData) {
-            
+
             if (jData.status == 1) {
                 // window.location.pathname = 'PROJECT/login-register.php'
             }
-            else{
+            else {
                 console.log('adding property failed');
                 console.log(jData.message);
 
@@ -206,6 +206,41 @@ $('#btnSubmitProperty').click(function (e) {
             </div>
             `)
             }
-            
+
+        })
+})
+
+
+
+$('#btnSendEmail').click(function () {
+    console.log('in send email');
+
+    var formData = new FormData(document.getElementById('frmSendMail'));
+
+    $.ajax({
+        url: "api/api-send-email.php",
+        method: "POST",
+        data: $('#frmSendMail').serialize(),
+        dataType: "JSON"
+    })
+        .done(function (jData) {
+            console.log('test');
+            if (jData.status == 1) {
+                // window.location.pathname = 'properties.php'
+                $('#emailStatus').empty();
+                $('#emailStatus').html(`
+            <div class="succes alert-succes emailSucces" role="alert">
+                ${jData.message}
+            </div>
+            `)
+            }
+            else {
+                $('#emailStatus').empty();
+                $('#emailStatus').html(`
+            <div class="alert alert-danger emailError" role="alert">
+                ${jData.message}
+            </div>
+            `)
+            }
         })
 })
