@@ -213,10 +213,13 @@ $('#btnSubmitProperty').click(function (e) {
 
 
 $('#btnSendEmail').click(function () {
-    console.log('in send email');
-
-    var formData = new FormData(document.getElementById('frmSendMail'));
-
+    $('#emailStatus').empty();
+    $('#emailStatus').html(`
+        <div class="success alert-success" role="alert">
+            email was sent
+        </div>
+    `)
+    
     $.ajax({
         url: "api/api-send-email.php",
         method: "POST",
@@ -224,23 +227,10 @@ $('#btnSendEmail').click(function () {
         dataType: "JSON"
     })
         .done(function (jData) {
-            console.log('test');
-            if (jData.status == 1) {
-                // window.location.pathname = 'properties.php'
-                $('#emailStatus').empty();
-                $('#emailStatus').html(`
-            <div class="succes alert-succes emailSucces" role="alert">
-                ${jData.message}
-            </div>
-            `)
-            }
-            else {
-                $('#emailStatus').empty();
-                $('#emailStatus').html(`
-            <div class="alert alert-danger emailError" role="alert">
-                ${jData.message}
-            </div>
-            `)
-            }
+            console.log('in done')
+        })
+        .fail(function(){
+          console.log('in fail')
+            
         })
 })

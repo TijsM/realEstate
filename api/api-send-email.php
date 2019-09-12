@@ -45,7 +45,7 @@ try {
     // Content
 
     $mail->isHTML(true);                                  // makes sure your email is formatted in html
-    $mail->Subject = 'confirmation of the test project';
+    $mail->Subject = 'new message from a potential buyer!';
 
 
     // **** putting link in the mail so the user can confirm the account  

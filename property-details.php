@@ -87,7 +87,7 @@ $jProperty = $jData->properties->$sPropertyId;
         <button type="button"  class="btn btn-primary btn-lg btn-block" id="btnSendEmail">send mail</button>
     </form>
 
-    <div class="emailStatus"></div>
+    <div id="emailStatus"></div>
 
 
 </div>
