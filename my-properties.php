@@ -37,7 +37,8 @@ $jPropertiesOfUser = $jData->users->$agentId->properties;
                         <div>{$jProp->location->city} - {$jProp->location->street} - {$jProp->location->houseNumber} </div>
                         <div>
                             <a href='edit-property.php?propId=$jProp->propertyId'><i class='fas fa-edit'></i></a>
-                            <a href='delete-property.php?propId='.$jProp->propertyId.''> <i class='fas fa-trash'></i></a>
+                           
+                            <a href='delete-property.php?propId=$jProp->propertyId'> <i class='fas fa-trash'></i></a>
                         </div>
                      </div>
                      ";

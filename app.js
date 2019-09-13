@@ -38,7 +38,7 @@ $('#registerUserSubmit').click(function () {
         .done(function (jData) {
             if (jData.status === 1) {
                 window.location.pathname = 'PROJECT/profile.php'
-            }
+                }
             else {
                 $('#registerUserError').empty();
                 $('#registerUserError').html(`
@@ -256,3 +256,4 @@ $('#btnSendEmail').click(function () {
             
         })
 })
+

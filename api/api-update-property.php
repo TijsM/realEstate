@@ -1,4 +1,4 @@
-<?php
+p<?php
 
 // ******* reading properties *************************************************
 $sName = $_POST['name'];
