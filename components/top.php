@@ -76,6 +76,14 @@ if ($isLogedIn == 'true') {
             </li>
             ";
         }
+
+        if ($isAgent == 'true') {
+          echo "
+            <li class='nav-item'>
+              <a class='nav-link' href='./my-properties.php'>my properties</a>
+            </li>
+            ";
+        }
         ?>
       </ul>
   </nav>

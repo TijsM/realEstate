@@ -118,18 +118,39 @@
 #btnSendEmail{
     margin-top: 35px;
 }
+
+/*** MYPROPERTIES ********************************************************************/
+
+#myPropertiesContainer h1{
+    margin-top: 50px;
+}
+
+#myPropertiesContainer .oneProp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#myPropertiesContainer .oneProp div{
+    width: 20%;
+    box-sizing: border-box;
+}
+
+#myPropertiesContainer .listHeader{
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-top: 45px;
+    margin-bottom: 25px;
+
+}
+
+
+
+
 /*** FOOTER ********************************************************************/
 
 footer{
     position: absolute;
     bottom: 5px;
 }
-
-
-
-
-
-
-
-
-

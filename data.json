@@ -23,14 +23,6 @@
                 "5d78d211c775b": "dslkfj"
             }
         },
-        "5d779da2a3f3a": {
-            "isAgent": "false",
-            "id": "5d779da2a3f3a",
-            "name": "Koen",
-            "lastName": "Koninks",
-            "email": "koen@gmail.com",
-            "password": "password"
-        },
         "5d77f5f59b922": {
             "isAgent": "true",
             "id": "5d77f5f59b922",
@@ -66,6 +58,27 @@
             "phone": "+32499721771",
             "properties": {
                 "5d7a06ac5d922": "Well equiped house in the neighbourhoud of Ghent"
+            }
+        },
+        "5d7b318889924": {
+            "isAgent": "false",
+            "id": "5d7b318889924",
+            "name": "Koen",
+            "lastName": "Bouwens",
+            "email": "koen@gmail.com",
+            "password": "password"
+        },
+        "5d7b31abb6fc5": {
+            "isAgent": "true",
+            "id": "5d7b31abb6fc5",
+            "name": "Simon",
+            "lastName": "Yates",
+            "email": "simon@gmail.com",
+            "password": "password",
+            "phone": "+32499784774",
+            "properties": {
+                "5d7b326cdef5c": "villa in london",
+                "5d7b462de69d2": "Appartment in the touristic center"
             }
         }
     },
@@ -186,6 +199,52 @@
                 "5d7a06ac5d922-2.png",
                 "5d7a06ac5d922-3.png",
                 "5d7a06ac5d922-4.png"
+            ]
+        },
+        "5d7b326cdef5c": {
+            "propertyId": "5d7b326cdef5c",
+            "agentId": "5d7b31abb6fc5",
+            "uploadTime": 1568354924,
+            "name": "villa in london",
+            "price": "1000000",
+            "size": "458",
+            "bedrooms": "4",
+            "description": "Big house in de wealthy neighborhoud of west london",
+            "location": {
+                "street": "higstreet",
+                "houseNumber": "45",
+                "zipCode": "2200",
+                "city": "London",
+                "country": "UK",
+                "longtitude": "-0.118092",
+                "latitude": "51.509865"
+            },
+            "images": [
+                "5d7b326cdef5c-0.png",
+                "5d7b326cdef5c-1.png",
+                "5d7b326cdef5c-2.png"
+            ]
+        },
+        "5d7b462de69d2": {
+            "propertyId": "5d7b462de69d2",
+            "agentId": "5d7b31abb6fc5",
+            "uploadTime": 1568359981,
+            "name": "Appartment in the touristic center",
+            "price": "452000",
+            "size": "130",
+            "bedrooms": "5",
+            "description": "An appartment with a view on the beautifull nyhavn\r\n",
+            "location": {
+                "street": "Nyhavn",
+                "houseNumber": "42",
+                "zipCode": "2200",
+                "city": "Copenhagen",
+                "country": "Denmark",
+                "longtitude": "55.679980",
+                "latitude": "12.568337"
+            },
+            "images": [
+                "5d7b462de69d2-0.png"
             ]
         }
     }
