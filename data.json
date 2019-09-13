@@ -1,250 +1,120 @@
 {
     "users": {
-        "5d775955c6503": {
-            "isAgent": "false",
-            "id": "5d775955c6503",
-            "name": "Tijs",
-            "lastName": "Martens",
-            "email": "tijs@gmail.com",
-            "password": "password",
-            "properties": {
-                "5d78175976237": "house gent",
-                "5d781776c37d7": "house gent",
-                "5d781786a162d": "house gent",
-                "5d78181bb90a3": "house gent",
-                "5d78185416600": "house gent",
-                "5d781855cf315": "house gent",
-                "5d781896d7135": "house gent",
-                "5d7818987c47d": "house gent",
-                "5d78189a16075": "house gent",
-                "5d78a25f4ca3a": "house gent",
-                "5d78a267477f3": "house gent",
-                "5d78a3352a785": "house gent",
-                "5d78d211c775b": "dslkfj"
-            }
-        },
-        "5d77f5f59b922": {
+        "5d7b6367d44bc": {
             "isAgent": "true",
-            "id": "5d77f5f59b922",
-            "name": "Agent",
-            "lastName": "prof",
-            "email": "agent@professional.com",
-            "password": "password",
-            "phone": "+32488754117",
-            "properties": {
-                "5d789c7c43f69": "dsfkl",
-                "5d789f42379bd": "sdf",
-                "5d789f54b9ad2": "sdf",
-                "5d78a22b3480e": "sdjlfmsd",
-                "5d78a33e336e7": "sdjlfmsd",
-                "5d78a3e0a98fc": "sdjlfmsd",
-                "5d78a5ea8c325": "sdjlfmsd",
-                "5d78a608dcfcd": "sdjlfmsd",
-                "5d78a67755a60": "sdjlfmsd",
-                "5d78a69e391ae": "sdjlfmsd",
-                "5d78a740d8d1f": "sdfkmjsd",
-                "5d78d3f3e860f": "Villa In the countryside",
-                "5d78d9931c616": "Villa In the city centre",
-                "5d796bba35e73": "appartment in centre of copenhagen"
-            }
-        },
-        "5d7a063e819d8": {
-            "isAgent": "true",
-            "id": "5d7a063e819d8",
-            "name": "Tijs",
+            "id": "5d7b6367d44bc",
+            "name": "Tijs Martens",
             "lastName": "Martens",
             "email": "tijs.martens.tijs@gmail.com",
             "password": "password",
             "phone": "+32499721771",
             "properties": {
-                "5d7a06ac5d922": "Well equiped house in the neighbourhoud of Ghent"
-            }
-        },
-        "5d7b318889924": {
-            "isAgent": "false",
-            "id": "5d7b318889924",
-            "name": "Koen",
-            "lastName": "Bouwens",
-            "email": "koen@gmail.com",
-            "password": "password"
-        },
-        "5d7b31abb6fc5": {
-            "isAgent": "true",
-            "id": "5d7b31abb6fc5",
-            "name": "Simon",
-            "lastName": "Yates",
-            "email": "simon@gmail.com",
-            "password": "password",
-            "phone": "+32499784774",
-            "properties": {
-                "5d7b326cdef5c": "villa in london",
-                "5d7b462de69d2": "Appartment in the touristic center"
+                "5d7b640d64508": "spacious new house in Nyhavn",
+                "5d7b649d0f8b7": "cosy appartment in copenhagen",
+                "5d7b987ca0414": "Mansion with view on the sea",
+                "5d7b99f2098ad": "Villa in in calm area Copenhagen"
             }
         }
     },
     "properties": {
-        "5d78d211c775b": {
-            "propertyId": "5d78d211c775b",
-            "agentId": "5d775955c6503",
-            "uploadTime": 1568199185,
-            "name": "dslkfj",
-            "price": "20",
-            "size": "321321",
-            "bedrooms": "3213",
-            "description": "sdfds",
+        "5d7b640d64508": {
+            "propertyId": "5d7b640d64508",
+            "agentId": "5d7b6367d44bc",
+            "uploadTime": 1568380475,
+            "name": "house in Nyhavn",
+            "price": "5000000",
+            "size": "150",
+            "bedrooms": "3",
+            "description": "combine the best of both worlds park and city",
             "location": {
-                "street": "dsfsdf",
-                "houseNumber": "2213",
-                "zipCode": "2632",
-                "city": "213sdf",
-                "country": "dsf",
-                "longtitude": "32.1313",
-                "latitude": "3.213"
+                "street": "nyhavn",
+                "houseNumber": "45",
+                "zipCode": "2200",
+                "city": "Copenhagen",
+                "country": "Denmark",
+                "longtitude": "12.592008",
+                "latitude": "55.679656"
             },
             "images": [
-                "5d78d211c775b-0.png",
-                "5d78d211c775b-1.png"
+                "5d7b640d64508-0.png",
+                "5d7b640d64508-1.png",
+                "5d7b640d64508-2.png",
+                "5d7b640d64508-3.png"
             ]
         },
-        "5d78d3f3e860f": {
-            "propertyId": "5d78d3f3e860f",
-            "agentId": "5d77f5f59b922",
-            "uploadTime": 1568199667,
-            "name": "Villa In the countryside",
-            "price": "854214",
-            "size": "4585",
-            "bedrooms": "5",
-            "description": "this is a lovely villa with 5 bedrooms and a big garden",
+        "5d7b649d0f8b7": {
+            "propertyId": "5d7b649d0f8b7",
+            "agentId": "5d7b6367d44bc",
+            "uploadTime": 1568367773,
+            "name": "cosy appartment in copenhagen",
+            "price": "258700",
+            "size": "251",
+            "bedrooms": "3",
+            "description": "Cosy appartment in the city centre of copenhagen",
             "location": {
-                "street": "Veldstraat",
-                "houseNumber": "47",
-                "zipCode": "9000",
-                "city": "Ghent",
-                "country": "Belgium",
-                "longtitude": "78.532151",
-                "latitude": "45.513651"
-            },
-            "images": [
-                "5d78d3f3e860f-0.png",
-                "5d78d3f3e860f-1.png"
-            ]
-        },
-        "5d78d9931c616": {
-            "propertyId": "5d78d9931c616",
-            "agentId": "5d77f5f59b922",
-            "uploadTime": 1568201107,
-            "name": "Villa In the city centre",
-            "price": "621323",
-            "size": "562",
-            "bedrooms": "2",
-            "description": "big villa in the centre of the city",
-            "location": {
-                "street": "kouter",
-                "houseNumber": "47",
-                "zipCode": "9000",
-                "city": "Ghent",
-                "country": "Belgium",
-                "longtitude": "12.568337",
-                "latitude": "55.676098"
-            },
-            "images": [
-                "5d78d9931c616-1.png",
-                "5d78d9931c616-0.png"
-            ]
-        },
-        "5d796bba35e73": {
-            "propertyId": "5d796bba35e73",
-            "agentId": "5d77f5f59b922",
-            "uploadTime": 1568238522,
-            "name": "appartment in centre of copenhagen",
-            "price": "98456",
-            "size": "6542",
-            "bedrooms": "4",
-            "description": "lovely appartment near to a park in the neighborhoud of Norrebro",
-            "location": {
-                "street": "17",
-                "houseNumber": "Dortheavej",
+                "street": "452",
+                "houseNumber": "norebrosgade",
                 "zipCode": "2400",
                 "city": "Copenhagen",
                 "country": "Denmark",
-                "longtitude": "53.65126512",
-                "latitude": "8.6513535"
+                "longtitude": "12.551326",
+                "latitude": "55.701242"
             },
             "images": [
-                "5d796bba35e73-0.png",
-                "5d796bba35e73-1.png"
+                "5d7b649d0f8b7-0.png",
+                "5d7b649d0f8b7-1.png",
+                "5d7b649d0f8b7-2.png",
+                "5d7b649d0f8b7-3.png"
             ]
         },
-        "5d7a06ac5d922": {
-            "propertyId": "5d7a06ac5d922",
-            "agentId": "5d7a063e819d8",
-            "uploadTime": 1568278188,
-            "name": "Well equiped house in the neighbourhoud of Ghent",
-            "price": "535000",
-            "size": "854",
-            "bedrooms": "3",
-            "description": "This house has a big garden and is located in a street where there is no traffic. this makes it perfect for a young family.",
-            "location": {
-                "street": "Bekken",
-                "houseNumber": "8",
-                "zipCode": "9810",
-                "city": "Nazareth",
-                "country": "Belgium",
-                "longtitude": "18.65213",
-                "latitude": "6.71654"
-            },
-            "images": [
-                "5d7a06ac5d922-0.png",
-                "5d7a06ac5d922-1.png",
-                "5d7a06ac5d922-2.png",
-                "5d7a06ac5d922-3.png",
-                "5d7a06ac5d922-4.png"
-            ]
-        },
-        "5d7b326cdef5c": {
-            "propertyId": "5d7b326cdef5c",
-            "agentId": "5d7b31abb6fc5",
-            "uploadTime": 1568354924,
-            "name": "villa in london",
-            "price": "1000000",
-            "size": "458",
+        "5d7b987ca0414": {
+            "propertyId": "5d7b987ca0414",
+            "agentId": "5d7b6367d44bc",
+            "uploadTime": 1568381052,
+            "name": "Mansion with view on the sea",
+            "price": "750000",
+            "size": "250",
             "bedrooms": "4",
-            "description": "Big house in de wealthy neighborhoud of west london",
+            "description": "this old school mansion looks classy on the outside and is moddern on the inside.",
             "location": {
-                "street": "higstreet",
-                "houseNumber": "45",
-                "zipCode": "2200",
-                "city": "London",
-                "country": "UK",
-                "longtitude": "-0.118092",
-                "latitude": "51.509865"
+                "street": "pakhusjkaj",
+                "houseNumber": "78",
+                "zipCode": "2600",
+                "city": "Copenhagen",
+                "country": "Denmark",
+                "longtitude": "12.600576",
+                "latitude": "55.698232"
             },
             "images": [
-                "5d7b326cdef5c-0.png",
-                "5d7b326cdef5c-1.png",
-                "5d7b326cdef5c-2.png"
+                "5d7b987ca0414-0.png",
+                "5d7b987ca0414-1.png",
+                "5d7b987ca0414-2.png",
+                "5d7b987ca0414-3.png"
             ]
         },
-        "5d7b462de69d2": {
-            "propertyId": "5d7b462de69d2",
-            "agentId": "5d7b31abb6fc5",
-            "uploadTime": 1568359981,
-            "name": "Appartment in the touristic center",
-            "price": "452000",
-            "size": "130",
-            "bedrooms": "5",
-            "description": "An appartment with a view on the beautifull nyhavn\r\n",
+        "5d7b99f2098ad": {
+            "propertyId": "5d7b99f2098ad",
+            "agentId": "5d7b6367d44bc",
+            "uploadTime": 1568381556,
+            "name": "Villa in in calm area Copenhagen",
+            "price": "1000000",
+            "size": "740",
+            "bedrooms": "4",
+            "description": "Close to the city, calmest and most rustic area in Copenhagen",
             "location": {
-                "street": "Nyhavn",
-                "houseNumber": "42",
+                "street": "Frederiksdalsvej",
+                "houseNumber": "25",
                 "zipCode": "2200",
                 "city": "Copenhagen",
                 "country": "Denmark",
-                "longtitude": "55.679980",
-                "latitude": "12.568337"
+                "longtitude": "12.520157",
+                "latitude": "55.717852"
             },
             "images": [
-                "5d7b462de69d2-0.png"
+                "5d7b99f2098ad-0.png",
+                "5d7b99f2098ad-1.png",
+                "5d7b99f2098ad-2.png",
+                "5d7b99f2098ad-3.png"
             ]
         }
     }

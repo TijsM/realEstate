@@ -48,6 +48,7 @@ $('#registerUserSubmit').click(function () {
             `)
             }
         })
+
 })
 
 
@@ -191,27 +192,48 @@ $('#btnSubmitProperty').click(function (e) {
         processData: false
     })
         .done(function (jData) {
-
             if (jData.status == 1) {
-                // window.location.pathname = 'PROJECT/login-register.php'
+                window.location.pathname = 'PROJECT/my-properties.php'
             }
             else {
-                console.log('adding property failed');
-                console.log(jData.message);
-
-                $('#registerAgentError').empty();
-                $('#registerAgentError').html(`
-            <div class="alert alert-danger credentialError" role="alert">
-                ${jData.message}
-            </div>
-            `)
+                console.log('updating failed!');
+                window.location.pathname = 'PROJECT/my-properties.php'
             }
 
         })
 })
 
 
+$('#btnUpdateProperty').click(function (e) {
+    console.log('in update');
 
+    //stop auto refresh
+    e.preventDefault();
+
+    var formData = new FormData(document.getElementById('frmUpdateProperty'));
+
+    $.ajax({
+        url: "api/api-update-property.php",
+        method: 'POST',
+        data: formData,
+        dataType: "JSON",
+        cache: false,
+        contentType: false,
+        processData: false
+    })
+        .done(function (jData) {
+
+            if (jData.status == 1) {
+                window.location.pathname = 'PROJECT/my-properties.php'
+            }
+            else {
+                console.log('updating failed!');
+                window.location.pathname = 'PROJECT/my-properties.php'
+            }
+
+        })
+        
+})
 $('#btnSendEmail').click(function () {
     $('#emailStatus').empty();
     $('#emailStatus').html(`
