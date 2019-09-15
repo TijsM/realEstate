@@ -73,10 +73,7 @@ $jProperties = $jData->properties;
 </div>
 
 <script>
-    const txtSearch = document.querySelector('#txtSearch');
-    const divResults = document.querySelector('#propertiesContainer');
-
-    txtSearch.addEventListener('input', function() {
+    txtSearch.addEventListener('keyup', function() {
         $.ajax({
                 url: 'api/api-search-properties.php',
                 data: $('#frmSearch').serialize(),
@@ -84,37 +81,18 @@ $jProperties = $jData->properties;
                 dataType: 'JSON'
             })
             .done(function(matches) {
-                    $(divResults).empty();
-                    $(matches).each(function(index, jProp) {
-                            console.log(jProp);
-                            firstImage = `assets/uploadedProperties/${jProp.images[0]}`;
-                            // console.log(firstImage);
-                            $(divResults).append(`
-                    
-                        <div class="card propertyCard" id="prop${jProp.propertyId}">
-                            <img src="${firstImage}" class="card-img-top" alt="img house">
-                            <div class="card-body">
-                                <h3 class="card-title">${jProp.name}</h3>
-                                <h5>€ ${jProp.price}</h5>
-                                <p> bedrooms: ${jProp.bedrooms}</p>
-                                <p> ${jProp.location.city} - ${jProp.location.street}</p>
-                                <a class="btn btn-primary" href="property-details.php?id=$${jProp.propertyId}" role="button">
-                                    view details
-                                </a>
-                            </div>
-                        </div>                
-                    `)
-                            card = document.getElementById("prop" + jProp.propertyId)
-                            card.addEventListener("click", function() {
-                                removeActiveClassFromProperty()
-                                console.log(document.getElementById("marker" + jProp.propertyId))
-                                document.getElementById("marker" + jProp.propertyId).classList.add("active")
-                                document.getElementById("prop" + jProp.propertyId).classList.add("active")
-                            })
-                    })
+                console.log('in search');
+                $('.propertyCard').hide();
+                $(matches).each(function(index, propId) {
+                    propertyIdHtml = 'prop' + propId
+                    console.log(propertyIdHtml);
+                    $(`#${propertyIdHtml}`).show();
+                })
             })
     })
 </script>
+
+
 
 
 <script>
