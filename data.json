@@ -10,7 +10,7 @@
             "phone": "+32499721771",
             "properties": {
                 "5d7b640d64508": "spacious new house in Nyhavn",
-                "5d7b649d0f8b7": "cosy appartment in copenhagen",
+                "5d7b649d0f8b7": "Cosy appartment in copenhagen",
                 "5d7b987ca0414": "Mansion with view on the sea",
                 "5d7b99f2098ad": "Villa in in calm area Copenhagen"
             }
@@ -21,7 +21,7 @@
             "propertyId": "5d7b640d64508",
             "agentId": "5d7b6367d44bc",
             "uploadTime": 1568380475,
-            "name": "house in Nyhavn",
+            "name": "House in Nyhavn",
             "price": "5000000",
             "size": "150",
             "bedrooms": "3",
@@ -46,7 +46,7 @@
             "propertyId": "5d7b649d0f8b7",
             "agentId": "5d7b6367d44bc",
             "uploadTime": 1568367773,
-            "name": "cosy appartment in copenhagen",
+            "name": "Cosy appartment in copenhagen",
             "price": "258700",
             "size": "251",
             "bedrooms": "3",

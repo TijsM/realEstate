@@ -16,7 +16,19 @@ $jProperties = $jData->properties;
         <div id='map'></div>
 
     </div>
+    
     <div id="propertiesContainer">
+    <div class="card propertyCard">
+        <div class="card-body">
+            <h3>filters</h3>
+            <hr>
+            <br>
+            <form>
+                <input type="text" class="form-control" name="txtSearch" id="txtSearch" placeholder="search for propertie">
+            </form>
+        </div>
+    </div>
+
         <!-- 
         <div class="card propertyCard">
                 <img src="assets/uploadedProperties/house.png" class="card-img-top" alt="img house">
