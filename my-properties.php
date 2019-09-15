@@ -14,16 +14,16 @@ $agentId = $jUser->id;
 $jPropertiesOfUser = $jData->users->$agentId->properties;
 ?>
 <div id="myPropertiesContainer">
-    <h1 class="text-center">My Properties:</h1>
+    <h1 class="text-center">MY PROPERTIES</h1>
 
     <div class="propertyList">
         <ul class="list-group col-lg-8 offset-lg-2">
             <div class='list-group-item listHeader oneProp'>
                 <div>Name</div>
-                <div>price</div>
-                <div>bedrooms</div>
-                <div>address </div>
-                <div>edit/delete</div>
+                <div>Price</div>
+                <div>Bedrooms</div>
+                <div>Address </div>
+                <div>Edit/Delete</div>
             </div>
             <?php
             foreach ($jPropertiesOfUser as $sKey => $sPropName) {

@@ -16,20 +16,16 @@ $jProperties = $jData->properties;
         <div id='map'></div>
 
     </div>
-    
-    <div id="propertiesContainer">
-    <div class="card propertyCard">
-        <div class="card-body">
-            <h3>filters</h3>
-            <hr>
-            <br>
-            <form>
-                <input type="text" class="form-control" name="txtSearch" id="txtSearch" placeholder="search for propertie">
-            </form>
+    <div id="rigth">
+        <div class="card" id="filterCard">
+            <div class="card-body">
+                <form id="frmSearch">
+                    <input type="text" class="form-control" name="search" id="txtSearch" placeholder="SEARCH FOR PROPERTIES">
+                </form>
+            </div>
         </div>
-    </div>
-
-        <!-- 
+        <div id="propertiesContainer">
+            <!-- 
         <div class="card propertyCard">
                 <img src="assets/uploadedProperties/house.png" class="card-img-top" alt="img house">
                 <div class="card-body">
@@ -40,13 +36,10 @@ $jProperties = $jData->properties;
                 </div>
             </div> 
     -->
-
-
-
-        <?php
-        foreach ($jProperties as $jProp) {
-            $firstImage = "assets/uploadedProperties/{$jProp->images[0]}";
-            echo '
+            <?php
+            foreach ($jProperties as $jProp) {
+                $firstImage = "assets/uploadedProperties/{$jProp->images[0]}";
+                echo '
             <div class="card propertyCard" id="prop' . $jProp->propertyId . '">
                 <img src="' . $firstImage . '" class="card-img-top" alt="img house">
                 <div class="card-body">
@@ -72,13 +65,56 @@ $jProperties = $jData->properties;
                 document.getElementById("prop"+"' . $jProp->propertyId . '").classList.add("active")
             })
             </script>
-
-            
             ';
-        }
-        ?>
+            }
+            ?>
+        </div>
     </div>
 </div>
+
+<script>
+    const txtSearch = document.querySelector('#txtSearch');
+    const divResults = document.querySelector('#propertiesContainer');
+
+    txtSearch.addEventListener('input', function() {
+        $.ajax({
+                url: 'api/api-search-properties.php',
+                data: $('#frmSearch').serialize(),
+                method: 'GET',
+                dataType: 'JSON'
+            })
+            .done(function(matches) {
+                    $(divResults).empty();
+                    $(matches).each(function(index, jProp) {
+                            console.log(jProp);
+                            firstImage = `assets/uploadedProperties/${jProp.images[0]}`;
+                            // console.log(firstImage);
+                            $(divResults).append(`
+                    
+                        <div class="card propertyCard" id="prop${jProp.propertyId}">
+                            <img src="${firstImage}" class="card-img-top" alt="img house">
+                            <div class="card-body">
+                                <h3 class="card-title">${jProp.name}</h3>
+                                <h5>€ ${jProp.price}</h5>
+                                <p> bedrooms: ${jProp.bedrooms}</p>
+                                <p> ${jProp.location.city} - ${jProp.location.street}</p>
+                                <a class="btn btn-primary" href="property-details.php?id=$${jProp.propertyId}" role="button">
+                                    view details
+                                </a>
+                            </div>
+                        </div>                
+                    `)
+                            card = document.getElementById("prop" + jProp.propertyId)
+                            card.addEventListener("click", function() {
+                                removeActiveClassFromProperty()
+                                console.log(document.getElementById("marker" + jProp.propertyId))
+                                document.getElementById("marker" + jProp.propertyId).classList.add("active")
+                                document.getElementById("prop" + jProp.propertyId).classList.add("active")
+                            })
+                    })
+            })
+    })
+</script>
 
 
 <script>

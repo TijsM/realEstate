@@ -23,9 +23,18 @@ foreach($jData->properties as $sKey =>$sPropName){
 }
 
 
-foreach($aPropNames as $propName){
-   if(strpos(strtolower($propName), strtolower($sSearchTerm))!== false){
-        array_push($aMatches,$propName);
+// foreach($aPropNames as $propName){
+//    if(strpos(strtolower($propName), strtolower($sSearchTerm))!== false){
+//         array_push($aMatches,$propName);
+//    }
+// }
+
+foreach($jData->properties as $skey => $jProp){
+    if(strpos(strtolower($jData->properties->$skey->name), strtolower($sSearchTerm))!== false){
+        // array_push($aMatches,$skey);
+        $jsonKeyVal = new stdClass();
+        $jsonKeyVal->$skey = $jProp;
+        array_push($aMatches,$jProp);
    }
 }
 

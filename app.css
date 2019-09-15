@@ -1,5 +1,6 @@
 body{
-    background-image: radial-gradient(circle, #f0fcf1, #effefb, #f4feff, #fbfeff, #ffffff);}
+    background-image: radial-gradient(circle, #f0fcf1, #effefb, #f4feff, #fbfeff, #ffffff);
+}
 
 /*** NAVBAR ********************************************************************/
 
@@ -50,39 +51,49 @@ body{
 
 #mapContainer{
     height: 100%;
-    width: 100%;
+    width: 40%;
+    
 }
 
 #mapContainer #map{
     width: 100%;
     height: 100%;
 }
-
+#rigth{
+    width: 60%;
+}
 #propertiesContainer{
     height: 100%;;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
+    padding: 26px;
+    padding-bottom: 100px;
 }
 
 #propertiesContainer .propertyCard{
     box-sizing: border-box;
-    width: 40%;
-    margin: 5%;
+    width: 29%;
+    margin: 2%;
+}
+
+#filterCard{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    background-color: white;
 }
 
 #propertiesContainer .active{
     background-image: radial-gradient(circle, #fcfeff, #f2fafe, #e7f6fe, #ddf3fd, #d2effc);
-    box-shadow: 0px 0px 37px 32px rgba(0, 0, 0, 0.336);
+    box-shadow: 0px 0px 25px 23px rgba(0, 0, 0, 0.336);
 }
 
 #mapContainer .active{
     background-color:  #515152a1;
     box-shadow: 0px 0px 15px 15px #515152a1;
     font-size: 3em;
-
-
 }
 
 /*** PROPERTY DETAILS ********************************************************************/

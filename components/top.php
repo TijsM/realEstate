@@ -30,7 +30,7 @@ if ($isLogedIn == 'true') {
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
-    <a class="navbar-brand" href="#">Houser</a>
+    <a class="navbar-brand" href='./properties.php'>Houser</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,7 +39,7 @@ if ($isLogedIn == 'true') {
       <ul class="navbar-nav mr-auto">
 
         <li class='nav-item '>
-          <a class='nav-link' href='./properties.php'>find properties<span class='sr-only'>(current)</span></a>
+          <a class='nav-link' href='./properties.php'>FIND PROPERTIES<span class='sr-only'>(current)</span></a>
         </li>
         <?php
         if ($isLogedIn == 'false') {
@@ -54,35 +54,34 @@ if ($isLogedIn == 'true') {
         if ($isLogedIn == 'true') {
           echo "
           <li class='nav-item'>
-            <a class='nav-link' href='./profile.php'>profile</a>
+            <a class='nav-link' href='./profile.php'>PROFILE</a>
           </li>
           ";
         }
 
+
+        if ($isAgent == 'true') {
+          echo "
+            <li class='nav-item'>
+              <a class='nav-link' href='./add-properties.php'>ADD PROPERTIES</a>
+            </li>
+            ";
+        }
+
+        if ($isAgent == 'true') {
+          echo "
+            <li class='nav-item'>
+              <a class='nav-link' href='./my-properties.php'>MY PROPERTIES</a>
+            </li>
+            ";
+        }
 
         if ($isLogedIn == 'true') {
           echo "
           <li class='nav-item' id='linkLogout'>
-            <a class='nav-link' href='#'>logout</a>
+            <a class='nav-link' href='#'>LOGOUT</a>
           </li>
           ";
-        }
-
-
-        if ($isAgent == 'true') {
-          echo "
-            <li class='nav-item'>
-              <a class='nav-link' href='./add-properties.php'>add properties</a>
-            </li>
-            ";
-        }
-
-        if ($isAgent == 'true') {
-          echo "
-            <li class='nav-item'>
-              <a class='nav-link' href='./my-properties.php'>my properties</a>
-            </li>
-            ";
         }
         ?>
       </ul>
