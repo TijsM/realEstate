@@ -23,7 +23,7 @@ $jPropertiesOfUser = $jData->users->$agentId->properties;
                 <div>Price</div>
                 <div>Bedrooms</div>
                 <div>Address </div>
-                <div>Edit/Delete</div>
+                <div>Edit/Hide</div>
             </div>
             <?php
             foreach ($jPropertiesOfUser as $sKey => $sPropName) {
@@ -36,20 +36,29 @@ $jPropertiesOfUser = $jData->users->$agentId->properties;
                         <div>$jProp->bedrooms</div>
                         <div>{$jProp->location->city} - {$jProp->location->street} - {$jProp->location->houseNumber} </div>
                         <div>
-                            <a href='edit-property.php?propId=$jProp->propertyId'><i class='fas fa-edit'></i></a>
+                            <a href='edit-property.php?propId=$jProp->propertyId'><i class='fas fa-edit iconMyProperties'></i></a>
                            
-                            <a href='delete-property.php?propId=$jProp->propertyId'> <i class='fas fa-trash'></i></a>
+                            <a href='delete-property.php?propId=$jProp->propertyId'> <i class='fas fa-eye-slash iconMyProperties'></i></i></a>
                         </div>
                      </div>
                      ";
             }
             ?>
-
-
         </ul>
     </div>
 </div>
 
+
+<button type="button" class="btn btn-secondary col-lg-6 offset-lg-3" id="btnShowDeleted">show hidden properties</button>
+
+
+<div >
+    
+</div>
+
+<ul class="list-group col-lg-8 offset-lg-2" id="deletedProps">
+
+</ul>
 
 
 <?php

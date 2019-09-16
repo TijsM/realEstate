@@ -248,10 +248,57 @@ $('#btnUpdateProperty').click(function (e) {
             }
 
         })
+})
+
+$('#btnShowDeleted').click(function () {
+    console.log('in show deleted props')
+
+
+    $.ajax({
+        url: "api/api-get-deleted-properties.php",
+        dataType: "JSON"
+    })
+        .done(function (jData) {
+            console.log(jData);
+
+            jData.forEach(function (item) {
+                console.log(item)
+
+                $('#deletedProps').append(`
+                <div class='list-group-item oneProp'>
+                <div><strong>${item.name}</strong></div>
+                <div>${item.price}</div>
+                <div>${item.bedrooms}</div>
+                <div>${item.location.city} - ${item.location.street}- ${item.location.houseNumber} </div>
+                <div>                   
+                    <a onclick=updateProperties('${item.propertyId}') id='btnRestoreProp'> <i class="fas fa-eye iconMyProperties"></i></i></a>
+                </div>
+             </div>
+             
+                `)
+
+            })
+        })
+    $('#deletedProps').empty();
 
 })
+
+function updateProperties(id){
+    console.log('in function')
+    $.ajax({
+        url: `api/api-restore-property.php?propId=${id}`,
+        dataType: "JSON"
+    }).done(function(){
+        location.reload();
+    })
+}
+
 $('#btnSendEmail').click(function () {
     $('#emailStatus').empty();
+
+
+
+
     $('#emailStatus').html(`
         <div class="success alert-success" role="alert">
             email was sent

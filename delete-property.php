@@ -14,12 +14,12 @@ $jProp = $jData->properties->$propId;
 
 
 <div class="jumbotron col-lg-6 offset-lg-3">
-  <h1 class="display-4">Are you sure you want to delete this property?</h1>
+  <h1 class="display-4">Are you sure you want to hide this property?</h1>
   <p>name: <?= $jProp->name ?></p>
   <p>price: <?= $jProp->price ?></p>
   <p>decripton: <?= $jProp->description ?></p>
   
-  <a class="btn btn-danger btn-lg" href="#" onclick="deleteProp()" role="button">delete</a>
+  <a class="btn btn-danger btn-lg" href="#" onclick="deleteProp()" role="button">Hide</a>
   <a class="btn btn-secundare btn-lg" href="my-properties.php" role="button">cancel</a>
 </div>
 

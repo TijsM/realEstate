@@ -11,20 +11,19 @@
             "properties": {
                 "5d7b640d64508": "spacious new house in Nyhavn",
                 "5d7b649d0f8b7": "Cosy appartment in copenhagen",
-                "5d7b987ca0414": "Mansion with view on the sea",
                 "5d7b99f2098ad": "Villa in in calm area Copenhagen",
                 "5d7f4eb238dac": "Appartment in Copenhagen",
-                "5d7f4ff43d14d": "Mansion in city center"
+                "5d7f4ff43d14d": "Mansion in city center",
+                "5d7b987ca0414": "Mansion with view on the sea"
             }
-        },
-        "": null
+        }
     },
     "properties": {
         "5d7b640d64508": {
             "propertyId": "5d7b640d64508",
             "agentId": "5d7b6367d44bc",
-            "uploadTime": 1568627172,
-            "name": "House in Nyhavnb",
+            "uploadTime": 1568380475,
+            "name": "House in Nyhavn",
             "price": "5000000",
             "size": "150",
             "bedrooms": "3",
@@ -39,7 +38,10 @@
                 "latitude": "55.679656"
             },
             "images": [
-                "5d7b640d64508-0.png"
+                "5d7b640d64508-0.png",
+                "5d7b640d64508-1.png",
+                "5d7b640d64508-2.png",
+                "5d7b640d64508-3.png"
             ]
         },
         "5d7b649d0f8b7": {
@@ -65,31 +67,6 @@
                 "5d7b649d0f8b7-1.png",
                 "5d7b649d0f8b7-2.png",
                 "5d7b649d0f8b7-3.png"
-            ]
-        },
-        "5d7b987ca0414": {
-            "propertyId": "5d7b987ca0414",
-            "agentId": "5d7b6367d44bc",
-            "uploadTime": 1568381052,
-            "name": "Mansion with view on the sea",
-            "price": "750000",
-            "size": "250",
-            "bedrooms": "4",
-            "description": "this old school mansion looks classy on the outside and is moddern on the inside.",
-            "location": {
-                "street": "pakhusjkaj",
-                "houseNumber": "78",
-                "zipCode": "2600",
-                "city": "Copenhagen",
-                "country": "Denmark",
-                "longtitude": "12.600576",
-                "latitude": "55.698232"
-            },
-            "images": [
-                "5d7b987ca0414-0.png",
-                "5d7b987ca0414-1.png",
-                "5d7b987ca0414-2.png",
-                "5d7b987ca0414-3.png"
             ]
         },
         "5d7b99f2098ad": {
@@ -145,7 +122,7 @@
         "5d7f4ff43d14d": {
             "propertyId": "5d7f4ff43d14d",
             "agentId": "5d7b6367d44bc",
-            "uploadTime": 1568627952,
+            "uploadTime": 1568624734,
             "name": "Mansion in city center",
             "price": "125000",
             "size": "120",
@@ -153,7 +130,7 @@
             "description": "Mansion with a lot of potential",
             "location": {
                 "street": "Frederiksborgvej",
-                "houseNumber": "16b",
+                "houseNumber": "16a",
                 "zipCode": "2400",
                 "city": "Copenhagen",
                 "country": "Denmark",
@@ -163,9 +140,32 @@
             "images": [
                 "5d7f4ff43d14d-0.png"
             ]
+        },
+        "5d7b987ca0414": {
+            "propertyId": "5d7b987ca0414",
+            "agentId": "5d7b6367d44bc",
+            "uploadTime": 1568381052,
+            "name": "Mansion with view on the sea",
+            "price": "750000",
+            "size": "250",
+            "bedrooms": "4",
+            "description": "this old school mansion looks classy on the outside and is moddern on the inside.",
+            "location": {
+                "street": "pakhusjkaj",
+                "houseNumber": "78",
+                "zipCode": "2600",
+                "city": "Copenhagen",
+                "country": "Denmark",
+                "longtitude": "12.600576",
+                "latitude": "55.698232"
+            },
+            "images": [
+                "5d7b987ca0414-0.png",
+                "5d7b987ca0414-1.png",
+                "5d7b987ca0414-2.png",
+                "5d7b987ca0414-3.png"
+            ]
         }
     },
-    "deletedProperties": {
-        "": null
-    }
+    "deletedProperties": {}
 }

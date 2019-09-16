@@ -144,14 +144,14 @@ body{
     margin-top: 50px;
 }
 
-#myPropertiesContainer .oneProp{
+ .oneProp{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
 }
 
-#myPropertiesContainer .oneProp div{
+ .oneProp div{
     width: 20%;
     box-sizing: border-box;
 }
@@ -165,8 +165,21 @@ body{
 }
 
 
+#btnShowDeleted{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
 
+.iconMyProperties{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    padding: 4px;
+}
 
+#deletedProps{
+    margin-bottom: 150px;
+}
 /*** FOOTER ********************************************************************/
 
 footer{
@@ -196,13 +209,13 @@ footer{
         margin-left: 2.5%;
     }
 
-    #myPropertiesContainer .oneProp{
+    .oneProp{
         flex-direction: column;
         align-content: space-around;
         justify-content: space-around;
         text-align: center;
     }
-    #myPropertiesContainer .oneProp div {
+     .oneProp div {
         width: 100%;
         box-sizing: border-box;
         
