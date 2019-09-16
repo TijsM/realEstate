@@ -1,4 +1,4 @@
-p<?php
+<?php
 
 // ******* reading properties *************************************************
 $sName = $_POST['name'];
@@ -47,6 +47,80 @@ $sUniqueKey = $_POST['propId'];
 // ******* vallidation *************************************************
 
 
+session_start();
+// checking if logged in
+if($_SESSION['jUser']->id != $sAgentId){
+    sendErrorMessage('user is not logged in or does not has this permission', __LINE__);
+}
+
+
+
+//checking if everything is filled in
+if (empty($sName)) {
+    sendErrorMessage('name can not be empty', __LINE__);
+}
+
+if (empty($sPrice)) {
+    sendErrorMessage('price can not be empty', __LINE__);
+}
+
+if (empty($sSize)) {
+    sendErrorMessage('size can not be empty', __LINE__);
+}
+
+if (empty($sBedrooms)) {
+    sendErrorMessage('bedrooms can not be empty', __LINE__);
+}
+
+if (empty($sDescription)) {
+    sendErrorMessage('description can not be empty', __LINE__);
+}
+
+if (empty($sHouseNumber)) {
+    sendErrorMessage('housenumber can not be empty', __LINE__);
+}
+
+if (empty($sStreetName)) {
+    sendErrorMessage('streetname can not be empty', __LINE__);
+}
+
+if (empty($sZipCode)) {
+    sendErrorMessage('zipcode can not be empty', __LINE__);
+}
+
+if (empty($sCity)) {
+    sendErrorMessage('city can not be empty', __LINE__);
+}
+
+if (empty($sCountry)) {
+    sendErrorMessage('country can not be empty', __LINE__);
+}
+
+if (empty($sLongtitude) || empty($sLatitude)) {
+    sendErrorMessage('cordinates can not be empty', __LINE__);
+}
+    
+
+//checking the length of certain properties
+if(strlen($sName)>120){
+    sendErrorMessage('name can not exceed the 120 chararcters limitation',__line__);
+}
+
+if($sLongtitude>180 || $sLatitude> 180){
+    sendErrorMessage('please fill in correct cordinates',__LINE__);
+}
+
+
+function sendErrorMessage($sMessage,  $iLine)
+{
+    echo '{
+        "status": 0,
+        "message": "' . $sMessage . '",
+        "line": ' . $iLine . '
+    }';
+
+    exit;
+}
 
 
 

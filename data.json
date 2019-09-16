@@ -12,16 +12,19 @@
                 "5d7b640d64508": "spacious new house in Nyhavn",
                 "5d7b649d0f8b7": "Cosy appartment in copenhagen",
                 "5d7b987ca0414": "Mansion with view on the sea",
-                "5d7b99f2098ad": "Villa in in calm area Copenhagen"
+                "5d7b99f2098ad": "Villa in in calm area Copenhagen",
+                "5d7f4eb238dac": "Appartment in Copenhagen",
+                "5d7f4ff43d14d": "Mansion in city center"
             }
-        }
+        },
+        "": null
     },
     "properties": {
         "5d7b640d64508": {
             "propertyId": "5d7b640d64508",
             "agentId": "5d7b6367d44bc",
-            "uploadTime": 1568380475,
-            "name": "House in Nyhavn",
+            "uploadTime": 1568627172,
+            "name": "House in Nyhavnb",
             "price": "5000000",
             "size": "150",
             "bedrooms": "3",
@@ -36,10 +39,7 @@
                 "latitude": "55.679656"
             },
             "images": [
-                "5d7b640d64508-0.png",
-                "5d7b640d64508-1.png",
-                "5d7b640d64508-2.png",
-                "5d7b640d64508-3.png"
+                "5d7b640d64508-0.png"
             ]
         },
         "5d7b649d0f8b7": {
@@ -116,9 +116,56 @@
                 "5d7b99f2098ad-2.png",
                 "5d7b99f2098ad-3.png"
             ]
+        },
+        "5d7f4eb238dac": {
+            "propertyId": "5d7f4eb238dac",
+            "agentId": "5d7b6367d44bc",
+            "uploadTime": 1568624306,
+            "name": "Appartment in Copenhagen",
+            "price": "325000",
+            "size": "254",
+            "bedrooms": "2",
+            "description": "A small appartment which is equiped and furnished. This is perfect if you want to move in fast",
+            "location": {
+                "street": "Skaffervej",
+                "houseNumber": "11",
+                "zipCode": "2400",
+                "city": "Copenhagen",
+                "country": "Denmark",
+                "longtitude": "12.533231",
+                "latitude": "55.705939"
+            },
+            "images": [
+                "5d7f4eb238dac-0.png",
+                "5d7f4eb238dac-1.png",
+                "5d7f4eb238dac-2.png",
+                "5d7f4eb238dac-3.png"
+            ]
+        },
+        "5d7f4ff43d14d": {
+            "propertyId": "5d7f4ff43d14d",
+            "agentId": "5d7b6367d44bc",
+            "uploadTime": 1568627952,
+            "name": "Mansion in city center",
+            "price": "125000",
+            "size": "120",
+            "bedrooms": "2",
+            "description": "Mansion with a lot of potential",
+            "location": {
+                "street": "Frederiksborgvej",
+                "houseNumber": "16b",
+                "zipCode": "2400",
+                "city": "Copenhagen",
+                "country": "Denmark",
+                "longtitude": "12.533191",
+                "latitude": "55.703109"
+            },
+            "images": [
+                "5d7f4ff43d14d-0.png"
+            ]
         }
     },
     "deletedProperties": {
-        
+        "": null
     }
 }

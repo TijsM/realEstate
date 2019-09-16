@@ -94,6 +94,8 @@ $jProperty = $jData->properties->$propId;
             <input type="file" multiple class="custom-file-input" id="images" name="images[]">
         </div>
         <button type="button" class="btn btn-primary" id="btnUpdateProperty">Submit</button>
+   
+        <div id="errorUpdateProp"></div>
     </form>
 </div>
 

@@ -60,7 +60,7 @@ $jProperties = $jData->properties;
             card.addEventListener("click", function(){
                 removeActiveClassFromProperty()
     
-                console.log( documemyPropertiesContainernt.getElementById("marker"+"' . $jProp->propertyId . '"))
+               
                 document.getElementById("marker"+"' . $jProp->propertyId . '").classList.add("active")
                 document.getElementById("prop"+"' . $jProp->propertyId . '").classList.add("active")
             })
@@ -129,7 +129,8 @@ $jProperties = $jData->properties;
         el.style.color = 'black';
         el.classList.add("marker");
         el.id = 'marker' + ajProperties[propertyId].propertyId;
-        // zenscroll.to(document.getElementById('prop' + ajProperties[propertyId].propertyId)); 
+
+
         let cords = [parseFloat(ajProperties[propertyId].location.longtitude), parseFloat(ajProperties[propertyId].location.latitude)]
         new mapboxgl.Marker(el).setLngLat(cords).addTo(map);
 

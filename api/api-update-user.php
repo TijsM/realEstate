@@ -10,7 +10,7 @@ session_start();
 //  echo $sUserId;
 
 if($_SESSION['jUser']->id != $sUserId){
-    sendErrorMessage('user is not logged in or does not has this permition', __LINE__);
+    sendErrorMessage('user is not logged in or does not has this permission', __LINE__);
 }
 
 if (empty($sUserId)) {

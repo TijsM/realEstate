@@ -38,7 +38,7 @@ $('#registerUserSubmit').click(function () {
         .done(function (jData) {
             if (jData.status === 1) {
                 window.location.pathname = 'PROJECT/profile.php'
-                }
+            }
             else {
                 $('#registerUserError').empty();
                 $('#registerUserError').html(`
@@ -196,8 +196,16 @@ $('#btnSubmitProperty').click(function (e) {
                 window.location.pathname = 'PROJECT/my-properties.php'
             }
             else {
-                console.log('updating failed!');
-                window.location.pathname = 'PROJECT/my-properties.php'
+
+                $('#errorAddProp').empty();
+                $('#errorAddProp').html(`
+                    <div class="alert alert-danger credentialError" role="alert">
+                        ${jData.message}
+                    </div>
+                `)
+
+                // console.log('updating failed!');
+                // window.location.pathname = 'PROJECT/my-properties.php'
             }
 
         })
@@ -227,12 +235,20 @@ $('#btnUpdateProperty').click(function (e) {
                 window.location.pathname = 'PROJECT/my-properties.php'
             }
             else {
-                console.log('updating failed!');
-                window.location.pathname = 'PROJECT/my-properties.php'
+
+                $('#errorUpdateProp').empty();
+                $('#errorUpdateProp').html(`
+                    <div class="alert alert-danger credentialError" role="alert">
+                        ${jData.message}
+                    </div>
+                `)
+
+                // console.log('updating failed!');
+                // window.location.pathname = 'PROJECT/my-properties.php'
             }
 
         })
-        
+
 })
 $('#btnSendEmail').click(function () {
     $('#emailStatus').empty();
@@ -241,7 +257,7 @@ $('#btnSendEmail').click(function () {
             email was sent
         </div>
     `)
-    
+
     $.ajax({
         url: "api/api-send-email.php",
         method: "POST",
@@ -251,9 +267,9 @@ $('#btnSendEmail').click(function () {
         .done(function (jData) {
             console.log('in done')
         })
-        .fail(function(){
-          console.log('in fail')
-            
+        .fail(function () {
+            console.log('in fail')
+
         })
 })
 
