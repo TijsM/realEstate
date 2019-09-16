@@ -38,14 +38,14 @@ if ($isLogedIn == 'true') {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
 
-        <li class='nav-item '>
+        <!-- <li class='nav-item '>
           <a class='nav-link' href='./properties.php'>FIND PROPERTIES<span class='sr-only'>(current)</span></a>
-        </li>
+        </li> -->
         <?php
         if ($isLogedIn == 'false') {
           echo "
           <li class='nav-item '>
-            <a class='nav-link' href='./login-register.php'>login or sign up<span class='sr-only'>(current)</span></a>
+            <a class='nav-link' href='./login-register.php'>LOGIN OR SIGN UP<span class='sr-only'>(current)</span></a>
           </li>
         ";
         }
@@ -74,6 +74,14 @@ if ($isLogedIn == 'true') {
               <a class='nav-link' href='./my-properties.php'>MY PROPERTIES</a>
             </li>
             ";
+        }
+
+        if ($isLogedIn == 'true') {
+          echo "
+          <li class='nav-item'>
+            <a class='nav-link' href='./saved-properties.php'>SAVED PROPERTIES</a>
+          </li>
+          ";
         }
 
         if ($isLogedIn == 'true') {

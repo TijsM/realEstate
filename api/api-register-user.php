@@ -60,6 +60,7 @@ $jUsers->users->$sUniqueId->name = $sUserName;
 $jUsers->users->$sUniqueId->lastName = $sFamilyName;
 $jUsers->users->$sUniqueId->email = $sEmail;
 $jUsers->users->$sUniqueId->password = $sPassword;
+$jUsers->users->$sUniqueId->likedProperties = [];
 
 
 $sUsers = json_encode($jUsers);

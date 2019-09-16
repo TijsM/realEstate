@@ -283,12 +283,12 @@ $('#btnShowDeleted').click(function () {
 
 })
 
-function updateProperties(id){
+function updateProperties(id) {
     console.log('in function')
     $.ajax({
         url: `api/api-restore-property.php?propId=${id}`,
         dataType: "JSON"
-    }).done(function(){
+    }).done(function () {
         location.reload();
     })
 }

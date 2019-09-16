@@ -47,9 +47,14 @@ $jProperties = $jData->properties;
                     <h5>€' . $jProp->price . '</h5>
                     <p> bedrooms: ' . $jProp->bedrooms . '</p>
                     <p>' . $jProp->location->city . ' - ' . $jProp->location->street . '</p>
+                    <div id="propertyCardButtonGroup">
                     <a class="btn btn-primary" href="property-details.php?id=' . $jProp->propertyId . '" role="button">
                         view details
                     </a>
+                    <a class="btn btn-secondary" role="button" id="savePropertie" class="save">
+                        <i class="far fa-save"></i>
+                    </a>
+                    </div>
                 </div>
             </div> 
             

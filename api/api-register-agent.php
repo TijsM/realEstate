@@ -69,6 +69,7 @@ $jUsers->users->$sUniqueId->email = $sEmail;
 $jUsers->users->$sUniqueId->password = $sPassword;
 $jUsers->users->$sUniqueId->phone = $sPhone;
 $jUsers->users->$sUniqueId->properties = new stdClass();
+$jUsers->users->$sUniqueId->likedProperties = [];
 
 $sUsers = json_encode($jUsers);
 file_put_contents('../data.json', $sUsers);

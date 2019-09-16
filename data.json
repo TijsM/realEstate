@@ -8,13 +8,15 @@
             "email": "tijs.martens.tijs@gmail.com",
             "password": "password",
             "phone": "+32499721771",
+            "likedProperties": [
+                "5d7b640d64508"
+            ],
             "properties": {
                 "5d7b640d64508": "spacious new house in Nyhavn",
                 "5d7b649d0f8b7": "Cosy appartment in copenhagen",
                 "5d7b99f2098ad": "Villa in in calm area Copenhagen",
                 "5d7f4eb238dac": "Appartment in Copenhagen",
-                "5d7f4ff43d14d": "Mansion in city center",
-                "5d7b987ca0414": "Mansion with view on the sea"
+                "5d7f4ff43d14d": "Mansion in city center"
             }
         }
     },
@@ -140,7 +142,9 @@
             "images": [
                 "5d7f4ff43d14d-0.png"
             ]
-        },
+        }
+    },
+    "deletedProperties": {
         "5d7b987ca0414": {
             "propertyId": "5d7b987ca0414",
             "agentId": "5d7b6367d44bc",
@@ -166,6 +170,5 @@
                 "5d7b987ca0414-3.png"
             ]
         }
-    },
-    "deletedProperties": {}
+    }
 }

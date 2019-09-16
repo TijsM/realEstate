@@ -101,6 +101,13 @@ body{
     font-size: 3em;
 }
 
+#propertyCardButtonGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
 /*** PROPERTY DETAILS ********************************************************************/
 #goBackToProperties{
     margin-top: 25px;
