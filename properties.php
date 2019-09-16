@@ -60,7 +60,7 @@ $jProperties = $jData->properties;
             card.addEventListener("click", function(){
                 removeActiveClassFromProperty()
     
-                console.log( document.getElementById("marker"+"' . $jProp->propertyId . '"))
+                console.log( documemyPropertiesContainernt.getElementById("marker"+"' . $jProp->propertyId . '"))
                 document.getElementById("marker"+"' . $jProp->propertyId . '").classList.add("active")
                 document.getElementById("prop"+"' . $jProp->propertyId . '").classList.add("active")
             })
@@ -83,10 +83,14 @@ $jProperties = $jData->properties;
             .done(function(matches) {
                 console.log('in search');
                 $('.propertyCard').hide();
+                $('.marker').hide();
+
                 $(matches).each(function(index, propId) {
                     propertyIdHtml = 'prop' + propId
+                    markerIdHtml = 'marker' + propId
                     console.log(propertyIdHtml);
                     $(`#${propertyIdHtml}`).show();
+                    $(`#${markerIdHtml}`).show();
                 })
             })
     })
@@ -115,15 +119,17 @@ $jProperties = $jData->properties;
 
     //looping over the json file
     for (let propertyId in ajProperties) {
-        var el = document.createElement('i');
+        var el = document.createElement('a');
 
         // console.log(propertyId);
         // console.log(ajProperties);
         // console.log(ajProperties[propertyId].propertyId);
-        el.href = 'prop' + ajProperties[propertyId].propertyId;
+        el.href = '#prop' + ajProperties[propertyId].propertyId;
         el.className = 'fas fa-home fa-2x';
         el.style.color = 'black';
+        el.classList.add("marker");
         el.id = 'marker' + ajProperties[propertyId].propertyId;
+        // zenscroll.to(document.getElementById('prop' + ajProperties[propertyId].propertyId)); 
         let cords = [parseFloat(ajProperties[propertyId].location.longtitude), parseFloat(ajProperties[propertyId].location.latitude)]
         new mapboxgl.Marker(el).setLngLat(cords).addTo(map);
 
