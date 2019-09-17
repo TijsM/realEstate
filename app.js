@@ -172,7 +172,7 @@ $('#linkLogout').click(function () {
 })
 
 
-$('#btnSubmitProperty').click(function (e) {
+    $('#btnSubmitProperty').click(function (e) {
     console.log('in add property');
 
     //stop auto refresh

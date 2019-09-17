@@ -42,9 +42,12 @@ $jData = json_decode($sData);
 
 $bInFile = 'false';
 
+$bEmailExists = false;
+
 foreach($jData->users as $sKey => $jProp){
     if($jProp->email == $_POST['email']){
 
+        $bEmailExists = true;
         $bInFile = 'true';
 
         if($jProp->password == $_POST['password']){
@@ -66,6 +69,11 @@ foreach($jData->users as $sKey => $jProp){
             sendErrorMessage('password or mail not correct', __LINE__);
         }
     }
+
+}
+
+if($bEmailExists == false){
+    sendErrorMessage('we do not recognize this mail, try registering', __LINE__);
 }
 
 if($bInFile == 'false'){

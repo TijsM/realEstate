@@ -1,6 +1,12 @@
 <?php
 
 session_start();
+
+
+if(!$_SESSION){
+    sendErrorMessage('you need to be logged in to save properties', __LINE__);
+}
+
 $sPropId = $_GET['propId'];
 $sUserId = $_SESSION['jUser']->id;
 
@@ -31,3 +37,17 @@ file_put_contents( '../data.json',json_encode($jData));
     "status": 1,
     "message": "property was saved"
 }';
+
+
+
+
+function sendErrorMessage($sMessage,  $iLine)
+{
+    echo '{
+        "status": 0,
+        "message": "' . $sMessage . '",
+        "line": ' . $iLine . '
+    }';
+
+    exit;
+}

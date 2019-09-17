@@ -98,7 +98,7 @@ if (empty($sLongtitude) || empty($sLatitude)) {
     sendErrorMessage('cordinates can not be empty', __LINE__);
 }
 
-if(count($aImages['images']['name'])==0){
+if(count($aImages['images']['name'])==0||empty($aImages['images'])){
     sendErrorMessage('you must upload at least one image', __LINE__);
 }
 

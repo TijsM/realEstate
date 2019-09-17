@@ -58,7 +58,7 @@ $jProperties = $jData->properties;
                                 view details
                             </a>
                             <a class="btn btn-secondary" role="button" onclick="saveProperty(\'' . $jProp->propertyId . '\')" class="save">
-                                <i class="far fa-save"></i>
+                                <i class="far fa-save saveico"></i>
                             </a>
                             </div>
                         </div>
