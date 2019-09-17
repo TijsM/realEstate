@@ -59,7 +59,7 @@ require_once(__DIR__ . '/components/top.php');
                                                 <input type="text" class="form-control" id="txtRegisterUserName" name="name" placeholder="Enter first name">
                                             </div>
                                             <div class="form-group">
-                                                <label for="txtRegisterUserFamilyName">Name</label>
+                                                <label for="txtRegisterUserFamilyName">family name</label>
                                                 <input type="text" class="form-control" id="txtRegisterUserFamilyName" name="familyName" placeholder="Enter family name">
                                             </div>
                                             <div class="form-group">
@@ -83,7 +83,7 @@ require_once(__DIR__ . '/components/top.php');
                                                 <input type="text" class="form-control" id="txtRegisterAgentName" name="name" placeholder="Enter first name">
                                             </div>
                                             <div class="form-group">
-                                                <label for="txtRegisterAgentFamilyName">Name</label>
+                                                <label for="txtRegisterAgentFamilyName">Family name</label>
                                                 <input type="text" class="form-control" id="txtRegisterAgentFamilyName" name="familyName" placeholder="Enter family name">
                                             </div>
                                             <div class="form-group">

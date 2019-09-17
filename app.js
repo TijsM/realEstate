@@ -37,7 +37,7 @@ $('#registerUserSubmit').click(function () {
     })
         .done(function (jData) {
             if (jData.status === 1) {
-                window.location.pathname = 'PROJECT/profile.php'
+                window.location.pathname = 'PROJECT/index.php'
             }
             else {
                 $('#registerUserError').empty();
@@ -63,7 +63,7 @@ $('#registerAgentSubmit').click(function () {
         .done(function (jData) {
             console.log('test');
             if (jData.status == 1) {
-                window.location.pathname = 'PROJECT/profile.php'
+                window.location.pathname = 'PROJECT/index.php'
             }
             else {
                 $('#registerAgentError').empty();
@@ -141,16 +141,14 @@ $('#deleteUser').click(function () {
     })
         .done(function (jData) {
             console.log('test');
+            sessionStorage.clear();
+            localStorage.clear();
+            window.location.pathname = 'PROJECT/login-register.php'
             if (jData.status == 1) {
-                window.location.pathname = 'PROJECT/'
+               
             }
             else {
-                $('#registerAgentError').empty();
-                $('#registerAgentError').html(`
-            <div class="alert alert-danger credentialError" role="alert">
-                ${jData.message}
-            </div>
-            `)
+                window.location.pathname = 'PROJECT/login-register.php'
             }
         })
 })
@@ -193,7 +191,7 @@ $('#btnSubmitProperty').click(function (e) {
     })
         .done(function (jData) {
             if (jData.status == 1) {
-                window.location.pathname = 'PROJECT/my-index.php'
+                window.location.pathname = 'PROJECT/my-properties.php'
             }
             else {
 
