@@ -98,7 +98,7 @@ body{
 #mapContainer .active{
     background-color:  #515152a1;
     box-shadow: 0px 0px 15px 15px #515152a1;
-    font-size: 3em;
+    /* font-size: 3em; */
 }
 
 #propertyCardButtonGroup {
@@ -145,7 +145,7 @@ body{
     margin-top: 35px;
 }
 
-/*** MYPROPERTIES ********************************************************************/
+/*** MY PROPERTIES ********************************************************************/
 
 #myPropertiesContainer h1{
     margin-top: 50px;
@@ -163,7 +163,7 @@ body{
     box-sizing: border-box;
 }
 
-#myPropertiesContainer .listHeader{
+ .listHeader{
     font-size: 1.5em;
     font-weight: bolder;
     margin-top: 45px;

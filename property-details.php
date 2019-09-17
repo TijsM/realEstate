@@ -12,7 +12,7 @@ $jData = json_decode($sData);
 $jProperty = $jData->properties->$sPropertyId;
 // print_r($jProperty);
 ?>
-<a class="btn btn-outline-secondary" id="goBackToProperties" href="properties.php" role="button">go back to properties</a>
+<a class="btn btn-outline-secondary" id="goBackToProperties" href="index.php" role="button">go back to properties</a>
 <!-- <button type="button" class="btn btn-secondary" id="goBackToProperties">go back to properties</button> -->
 <div class="jumbotron ol col-lg-8  offset-lg-2 jumboPropertyDetails">
     <h1 class="text-center"><?= $jProperty->name ?></h1>

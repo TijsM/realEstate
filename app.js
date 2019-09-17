@@ -12,7 +12,7 @@ $('#loginSubmit').click(function () {
     })
         .done(function (jData) {
             if (jData.status === 1) {
-                window.location.pathname = 'PROJECT/profile.php'
+                window.location.pathname = 'PROJECT/index.php'
             }
             else {
                 $('#loginError').empty();
@@ -193,7 +193,7 @@ $('#btnSubmitProperty').click(function (e) {
     })
         .done(function (jData) {
             if (jData.status == 1) {
-                window.location.pathname = 'PROJECT/my-properties.php'
+                window.location.pathname = 'PROJECT/my-index.php'
             }
             else {
 
@@ -204,8 +204,7 @@ $('#btnSubmitProperty').click(function (e) {
                     </div>
                 `)
 
-                // console.log('updating failed!');
-                // window.location.pathname = 'PROJECT/my-properties.php'
+               
             }
 
         })
@@ -296,9 +295,6 @@ function updateProperties(id) {
 $('#btnSendEmail').click(function () {
     $('#emailStatus').empty();
 
-
-
-
     $('#emailStatus').html(`
         <div class="success alert-success" role="alert">
             email was sent
@@ -320,3 +316,37 @@ $('#btnSendEmail').click(function () {
         })
 })
 
+
+
+function fillSavedProperties(){
+    console.log('in saved props');
+
+
+    $.ajax({
+        url: `api/api-get-saved-properties.php`,
+        dataType: "JSON"
+    }).done(function (jData) {
+        console.log(jData);
+
+        // $('#groupSavedProperties').empty();
+        $(jData).each(function(index, prop) {
+           console.log('x');
+
+           
+           $('#groupSavedProperties').append(`
+            <div class="list-group-item oneProp">
+                <div><strong>${prop.name}</strong></div>
+                <div>${prop.price}</div>
+                <div>${prop.bedrooms}</div>
+                <div>${prop.location.city} ${prop.location.street} ${prop.location.houseNumber}</div>
+                <div><a class="btn btn-primary" href="property-details.php?id=${prop.propertyId}" role="button">View property</a></div>
+            </div>
+           `);
+
+
+
+            
+        })
+    })
+    
+}

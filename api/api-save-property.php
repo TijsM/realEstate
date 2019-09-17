@@ -24,9 +24,6 @@ file_put_contents( '../data.json',json_encode($jData));
 
 
 
-
-
-
 function sendErrorMessage($sMessage,  $iLine)
 {
     echo '{

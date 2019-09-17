@@ -1,9 +1,26 @@
-<h1>SAVED PROPERTIES</h1>
+<?php
+require_once(__DIR__ . '/components/top.php');
+?>
 
-<ul class="list-group" id="groupSavedProperties">
-  <!-- <li class="list-group-item disabled" aria-disabled="true">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li> -->
+<h1 class="text-center">SAVED PROPERTIES</h1>
+
+
+<ul class="list-group col-lg-8 offset-lg-2" id="groupSavedProperties">
+  <div class='list-group-item listHeader oneProp'>
+    <div>Name</div>
+    <div>Price</div>
+    <div>Bedrooms</div>
+    <div>Address </div>
+    <div></div>
+  </div>
 </ul>
+
+
+
+<?php
+require_once(__DIR__ . '/components/bottom.php');
+?>
+
+<script>
+  window.onload = fillSavedProperties();
+</script>
