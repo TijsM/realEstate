@@ -11,6 +11,12 @@ $jProperties = $jData->properties;
 // print_r($jProperties);
 ?>
 
+
+<div class="alert alert-primary" role="alert" id="allertSaved">
+
+</div>
+
+
 <div id="propertiesPage">
     <div id="mapContainer">
         <div id='map'></div>
@@ -40,42 +46,45 @@ $jProperties = $jData->properties;
             foreach ($jProperties as $jProp) {
                 $firstImage = "assets/uploadedProperties/{$jProp->images[0]}";
                 echo '
-            <div class="card propertyCard" id="prop' . $jProp->propertyId . '">
-                <img src="' . $firstImage . '" class="card-img-top" alt="img house">
-                <div class="card-body">
-                    <h3 class="card-title">' . $jProp->name . '</h3>
-                    <h5>€' . $jProp->price . '</h5>
-                    <p> bedrooms: ' . $jProp->bedrooms . '</p>
-                    <p>' . $jProp->location->city . ' - ' . $jProp->location->street . '</p>
-                    <div id="propertyCardButtonGroup">
-                    <a class="btn btn-primary" href="property-details.php?id=' . $jProp->propertyId . '" role="button">
-                        view details
-                    </a>
-                    <a class="btn btn-secondary" role="button" id="savePropertie" class="save">
-                        <i class="far fa-save"></i>
-                    </a>
-                    </div>
-                </div>
-            </div> 
+                    <div class="card propertyCard" id="prop' . $jProp->propertyId . '">
+                        <img src="' . $firstImage . '" class="card-img-top" alt="img house">
+                        <div class="card-body">
+                            <h3 class="card-title">' . $jProp->name . '</h3>
+                            <h5>€' . $jProp->price . '</h5>
+                            <p> bedrooms: ' . $jProp->bedrooms . '</p>
+                            <p>' . $jProp->location->city . ' - ' . $jProp->location->street . '</p>
+                            <div id="propertyCardButtonGroup">
+                            <a class="btn btn-primary" href="property-details.php?id=' . $jProp->propertyId . '" role="button">
+                                view details
+                            </a>
+                            <a class="btn btn-secondary" role="button" onclick="saveProperty(\'' . $jProp->propertyId . '\')" class="save">
+                                <i class="far fa-save"></i>
+                            </a>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <script>
+                    card = document.getElementById("prop' . $jProp->propertyId . '")
+                    console.log("' . $jProp->propertyId . '")
+                    console.log(card);
+                    card.addEventListener("click", function(){
+                        removeActiveClassFromProperty()
             
-            <script>
-            card = document.getElementById("prop' . $jProp->propertyId . '")
-            console.log("' . $jProp->propertyId . '")
-            console.log(card);
-            card.addEventListener("click", function(){
-                removeActiveClassFromProperty()
-    
-               
-                document.getElementById("marker"+"' . $jProp->propertyId . '").classList.add("active")
-                document.getElementById("prop"+"' . $jProp->propertyId . '").classList.add("active")
-            })
-            </script>
-            ';
+                    
+                        document.getElementById("marker"+"' . $jProp->propertyId . '").classList.add("active")
+                        document.getElementById("prop"+"' . $jProp->propertyId . '").classList.add("active")
+                    })
+                    </script>
+                    ';
             }
             ?>
+
+
         </div>
     </div>
 </div>
+
 
 <script>
     txtSearch.addEventListener('keyup', function() {

@@ -1,36 +1,33 @@
 <?php
 
-
-$sPropId = $_GET['propId'];
-$sUserId = $_GET['userId'];
-
-
 session_start();
+$sPropId = $_GET['propId'];
+$sUserId = $_SESSION['jUser']->id;
 
-if($_SESSION['jUser']->id != $sUserId){
-    sendErrorMessage('user is not logged in or does not has this permition', __LINE__);
-}
 
-echo $_SESSION['jUser']->id;
-echo $sUserId;
+
+// echo $_SESSION['jUser']->id;
+// echo $sUserId;
 
 $sData = file_get_contents('../data.json');
 $jData = json_decode($sData);
+
+foreach($jData->users->$sUserId->likedProperties as $likedProp){
+    if($likedProp == $sPropId){
+        echo '{
+            "status": 2,
+            "message": "Property was already saved"
+        }';
+    
+        exit;
+    }
+}
 
 array_push($jData->users->$sUserId->likedProperties, $sPropId);
 
 file_put_contents( '../data.json',json_encode($jData));
 
-
-
-
-function sendErrorMessage($sMessage,  $iLine)
-{
-    echo '{
-        "status": 0,
-        "message": "' . $sMessage . '",
-        "line": ' . $iLine . '
-    }';
-
-    exit;
-}
+ echo '{
+    "status": 1,
+    "message": "property was saved"
+}';

@@ -320,19 +320,13 @@ $('#btnSendEmail').click(function () {
 
 function fillSavedProperties(){
     console.log('in saved props');
-
-
     $.ajax({
         url: `api/api-get-saved-properties.php`,
         dataType: "JSON"
     }).done(function (jData) {
-        console.log(jData);
-
-        // $('#groupSavedProperties').empty();
+        // console.log(jData);
         $(jData).each(function(index, prop) {
-           console.log('x');
-
-           
+        //    console.log('x');           
            $('#groupSavedProperties').append(`
             <div class="list-group-item oneProp">
                 <div><strong>${prop.name}</strong></div>
@@ -342,11 +336,26 @@ function fillSavedProperties(){
                 <div><a class="btn btn-primary" href="property-details.php?id=${prop.propertyId}" role="button">View property</a></div>
             </div>
            `);
-
-
-
-            
         })
     })
-    
+}
+
+
+function saveProperty(propId){
+    console.log(propId);
+
+    $.ajax({
+        url: `api/api-save-property.php?propId=${propId}`,
+        dataType: "JSON"
+    }).done(function (jData) {
+        $('#allertSaved').empty();
+        $('#allertSaved').css("display", "block");
+        $('#allertSaved').html(`
+            ${jData.message}
+        `);
+
+        setTimeout(() => {
+            $('#allertSaved').css("display", "none");
+        }, 5000);
+    })
 }
